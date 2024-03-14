@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import { Button } from "@material-tailwind/react";
+import { Footer } from './Component/Footer';
 
 function App() {
 
 
   return (
     <>
-    <Button>Button1</Button>
+    <Footer/>
     </>
   )
 }
