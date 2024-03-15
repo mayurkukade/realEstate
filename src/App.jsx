@@ -4,13 +4,14 @@ import { Footer } from './Component/Footer';
 import About from './Component/About';
 import Services from './Component/Services';
 import SellRentCard from './Component/SellRentCard';
+import ACService from './Component/ACService';
 
 function App() {
 
 
   return (
     <>
-    <SellRentCard/>
+    <ACService/>
     </>
   )
 }
