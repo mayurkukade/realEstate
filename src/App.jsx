@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <Button>Button</Button>
+    <Button>Button1</Button>
     </>
   )
 }
