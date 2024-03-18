@@ -40,7 +40,7 @@ export function NavbarBlue() {
         </div>
       </Navbar>
 
-      <div class="flex flex-col items-center justify-between gap-4 md:flex-row px-8">
+      <div class="flex flex-col items-center justify-between gap-4 md:flex-row mx-auto max-w-screen-xl mt-2">
         <div class="block w-full overflow-hidden md:w-max">
           <nav>
             <ul
@@ -63,6 +63,15 @@ export function NavbarBlue() {
                 data-value="monitored"
               >
                 <div class="z-20 text-inherit">
+                  &nbsp;&nbsp;New Projects&nbsp;&nbsp;
+                </div>
+              </li>
+              <li
+                role="tab"
+                class="relative flex items-center justify-center w-full h-full px-2 py-1 font-sans text-base antialiased font-normal leading-relaxed text-center bg-transparent cursor-pointer select-none text-blue-gray-900"
+                data-value="monitored"
+              >
+                <div class="z-20 text-inherit">
                   &nbsp;&nbsp;Top Agents&nbsp;&nbsp;
                 </div>
               </li>
@@ -71,7 +80,7 @@ export function NavbarBlue() {
         </div>
 
         <button
-          class="flex select-none items-center gap-2 rounded-lg bg-gray-200 py-2 px-4 text-center align-middle font-sans text-xs font-bold text-black shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          class="flex select-none items-center gap-2 rounded-lg bg-gray-100 py-2 px-4 text-center align-middle font-sans text-xs font-bold text-black shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           type="button"
         >
           <i class="fa-solid fa-arrow-down-wide-short fa-lg"></i>
