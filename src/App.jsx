@@ -13,7 +13,8 @@ function App() {
   return (
     <div>
       {/* <Error_Page></Error_Page> */}
-      <NavbarBlue></NavbarBlue>
+      {/* <NavbarBlue></NavbarBlue> */}
+      <SalePropertyCard></SalePropertyCard>
     </div>
   )
 }
