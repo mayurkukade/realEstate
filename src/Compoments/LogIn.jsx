@@ -11,10 +11,10 @@ import { Link } from 'react-router-dom';
 
 export default function LogIn() {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center items-center min-h-screen'>
        <div>
-       <Card color="white" className='px-2 py-2' shadow={true}>
-      <Typography variant="h4" color="blue-gray">
+       <Card color="white" className='px-2 py-2 shadow-md shadow-gray-400' >
+      <Typography variant="h4" color="blue-gray" className='text-center'>
         LogIN
       </Typography>
    
@@ -77,7 +77,7 @@ export default function LogIn() {
           LogIn
         </Button>
         <Typography color="gray" className="mt-4 text-center font-normal">
-          Already have an account?{" "}
+          Dont have an Account?{" "}
           <Link to="/singup" className="font-medium text-gray-900">
             Sign Up
           </Link>

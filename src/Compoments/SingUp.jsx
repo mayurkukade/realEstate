@@ -11,10 +11,10 @@ import { Link } from 'react-router-dom';
 
 export default function SingUp() {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center mt-10'>
       <div>
-      <Card color="white" className='px-2 py-2' shadow={true}>
-      <Typography variant="h4" color="blue-gray">
+      <Card color="white" className='px-2 py-2 shadow-md shadow-gray-400' >
+      <Typography variant="h4" color="blue-gray" className='text-center'>
       Sign Up
       </Typography>
    

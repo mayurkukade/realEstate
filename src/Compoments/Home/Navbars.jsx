@@ -70,6 +70,7 @@ export default function Navbars() {
       <div className="-m-6 max-h-[768px] w-[84rem] mt-[1px] ">
         <Navbar className=" h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-1">
           <div className="flex items-center justify-between text-blue-gray-900">
+            <Link to="/">
             <Typography
               as="a"
               href="#"
@@ -84,6 +85,7 @@ export default function Navbars() {
                 <p className="text-sm font-normal">We'll lead you way home</p>
               </div>
             </Typography>
+            </Link>
             <div className="flex items-center gap-4">
               <div className="mr-4 hidden lg:block">{navList}</div>
               <div className="flex items-center gap-x-1">

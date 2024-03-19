@@ -14,7 +14,7 @@ export default function Homepage() {
   return (
     <div>
       {/* Sticky Navbar */}
-      <Navbars className="sticky top-0 z-50 " />
+      {/* <Navbars className="sticky top-0 z-50 " /> */}
 
       {/* Container for the rest of the components */}
       <div className="overflow-y-auto">
@@ -24,9 +24,8 @@ export default function Homepage() {
         <CourselEffect />
         <ContactCustomer />
         <LatestNews />
-        <Footers />
-        {/* <LogIn />
-        <SingUp /> */}
+        {/* <Footers /> */}
+    
       </div>
     </div>
   );
