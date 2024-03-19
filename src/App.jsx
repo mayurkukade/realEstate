@@ -16,13 +16,28 @@ import GroceryService from './Component/GroceryService';
 import HouseService from './Component/HouseService';
 import DthService from './Component/DthService';
 import GardeningService from './Component/GardeningService';
+import { ServiceNavbar } from './Component/ServiceNavbar';
 
 function App() {
 
 
   return (
     <>
-    <GardeningService/>
+    {/* <About/>
+    <Services/> */}
+    {/* <ACService/> */}
+    {/* <CarpenterService/> */}
+    {/* <DthService/> */}
+    <PlumbingService/>
+    {/* <PaintingService/> */}
+    {/* <SecurityService/> */}
+    {/* <PestService/> */}
+    {/* <WifiService/> */}
+    {/* <GroceryService/> */}
+    {/* <HouseService/> */}
+    {/* <ElectricalService/> */}
+    {/* <GardeningService/> */}
+    {/* <ServiceNavbar/> */}
     </>
   )
 }

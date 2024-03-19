@@ -13,7 +13,6 @@ import image10 from '../assets/images/Paint/image10.jpg'
 import image11 from '../assets/images/Paint/image11.jpg'
 
 
-
 function PaintingService() {
   const serviceProviders = [
     {
