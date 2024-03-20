@@ -58,9 +58,9 @@ export default function Navbars() {
           color="blue-gray"
           className="p-1 font-normal"
         >
-          <a href="#" className="flex items-center">
+          <Link to="/about" className="flex items-center">
             About us
-          </a>
+          </Link>
         </Typography>
       </ul>
     );
