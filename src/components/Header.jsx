@@ -3,105 +3,146 @@ import {
   Navbar,
   Collapse,
   Typography,
+  Button,
   IconButton,
+  List,
+  ListItem,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  ChevronDownIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+import {
+  Bars4Icon,
+  GlobeAmericasIcon,
+  NewspaperIcon,
+  PhoneIcon,
+  RectangleGroupIcon,
+  SquaresPlusIcon,
+  SunIcon,
+  TagIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/solid";
+ 
 
  
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-14">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 gap-8">
       <Typography
-        as="li"
+        as="a"
+        href="#"
         variant="h5"
         color="black"
-        className="p-1 font-medium"
+        className="font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          HOME
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h5"
-        color="black"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          RENT
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h5"
-        color="black"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          RESALE
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h5"
-        color="black"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          SERVICES
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h5"
-        color="black"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          CONTACT
-        </a>
+        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
       </Typography>
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 fill-current">
-        <path fillRule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clipRule="evenodd" />
-        </svg>
-
-    </ul>
+      <Typography
+        as="a"
+        href="#"
+        variant="h5"
+        color="black"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Listing
+        </ListItem>
+      </Typography>
+      <Typography
+        as="a"
+        href="#"
+        variant="h5"
+        color="black"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Properties
+        </ListItem>
+      </Typography>
+      <Typography
+        as="a"
+        href="#"
+        variant="h5"
+        color="black"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Contact us
+        </ListItem>
+      </Typography>
+      <Typography
+        as="a"
+        href="#"
+        variant="h5"
+        color="black"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          About
+        </ListItem>
+      </Typography>
+    </List>
   );
 }
  
 export function Header() {
   const [openNav, setOpenNav] = React.useState(false);
  
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
- 
   React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
- 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false),
+    );
   }, []);
  
   return (
-    <Navbar className="fixed top-0 left-0 max-w-full max-h-full bg-transparent rounded-none border-none">
-      <div className="flex items-center justify-between text-blue-gray-900 ">
+    <Navbar className="x-auto max-w-full px-6 py-3 rounded-none border-none shadow-none">
+      <div className="flex items-center justify-between text-blue-gray-900">
+       <div className="flex mt-0">
+        <div>
+        <img src="https://s3-alpha-sig.figma.com/img/2458/f302/17d6a62fbb11ecefc8339858edd37ebb?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TdskbuWEUTdQrNEK0pA1JEMZowj9~gaCACga2EgWCFKezbXQzh2SVeIekVJWZbjaclkVAksSDpJQAbHPT6LBxCbml2iVI1n2~bwTW3YSqhn59Qwb4A2hfQ-koKhFdmy0VAlnWpb9SPK-jGwPjlXZVs5bCgyu1Ydyh0okcVMf0rq~gythcjPtcUnWShlYfVyCJkd~5Ngh3jMv4Nk~hHn2o4mVM0AHwcPV5WKrEIYaCn7itjjLkK~akfCnOWLOsfC4A1AGT9MogUUiim6OSDmukcUgrnG52405ozgS9XiSAyJGuYYsF4GomVz03DRUJrbtKwJY1Z5RUEtKnuJs9DQY~w__" className="w-16 h-16"></img>
+        </div>
+        <div>
         <Typography
           as="a"
           href="#"
           variant="h3"
-          className="mr-4 cursor-pointer py-1.5 "
+          className=" cursor-pointer"
         >
-          {/* Real Estate */}
+          RealEstate
         </Typography>
+        <Typography
+           as="a"
+           href="#"
+           variant="paragraph"
+           className=" cursor-pointer space-y-0 my-0 mt-0"
+        >
+            We'll lead you the way home
+          </Typography>
+          </div>
+        </div>
         <div className="hidden lg:block">
           <NavList />
         </div>
+        <div className="hidden gap-8 lg:flex">
+          <Button variant="outlined" size="md" >
+            Log In
+          </Button>
+          <Button variant="filled"  size="md" color="indigo">
+            Sign Up
+          </Button>
+        </div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
+          color="blue-gray"
+          className="lg:hidden"
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
@@ -113,6 +154,14 @@ export function Header() {
       </div>
       <Collapse open={openNav}>
         <NavList />
+        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+          <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
+            Log In
+          </Button>
+          <Button variant="gradient" size="sm" fullWidth>
+            Sign Up
+          </Button>
+        </div>
       </Collapse>
     </Navbar>
   );
