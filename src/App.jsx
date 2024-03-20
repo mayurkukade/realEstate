@@ -21,6 +21,10 @@ import { CardDefault } from "./components/PropertyServicesCard";
 import { NewPropertyListing } from "./components/NewPropertyListing";
 
 import { PlotForSaleListing } from "./components/PlotForSaleListing";
+import { RentalPropertyNavbar } from "./components/RentalPropertyNavbar";
+import { ResalePropertyNavbar } from "./components/ResalePropertyNavbar";
+import { NewPropertyNavbar } from "./components/NewPropertyNavbar";
+import { PlotForSaleNavbar } from "./components/PlotForSaleNavbar";
 
 function App() {
   return (
@@ -28,13 +32,13 @@ function App() {
       <div id="ErrorPage">{/* <Error_Page></Error_Page> */}</div>
 
       <div id="ResalePropertyPage">
-        {/* <NavbarSalePropertyCard></NavbarSalePropertyCard>
+        {/* <ResalePropertyNavbar></ResalePropertyNavbar>
         <PropertyListing></PropertyListing> */}
       </div>
 
       <div id="RentalPropertyPage">
-        {/* <NavbarSalePropertyCard></NavbarSalePropertyCard>
-      <RentalPropertyListing></RentalPropertyListing> */}
+        {/* <RentalPropertyNavbar></RentalPropertyNavbar>
+        <RentalPropertyListing></RentalPropertyListing> */}
       </div>
 
       <div id="RentalPropertyDetailPage">
@@ -46,17 +50,17 @@ function App() {
       </div>
 
       <div id="NewPropertyPage">
-        {/* <NavbarSalePropertyCard></NavbarSalePropertyCard>
+        {/* <NewPropertyNavbar></NewPropertyNavbar>
         <NewPropertyListing></NewPropertyListing> */}
       </div>
 
       <div id="PlotForSalePage">
-        {/* <NavbarSalePropertyCard></NavbarSalePropertyCard>
-        <PlotForSaleListing></PlotForSaleListing> */}
+        <PlotForSaleNavbar></PlotForSaleNavbar>
+        <PlotForSaleListing></PlotForSaleListing>
       </div>
 
       <div id="PostPropertyPage">
-      {/* <PostPropertyCard></PostPropertyCard> */}
+        {/* <PostPropertyCard></PostPropertyCard> */}
       </div>
     </div>
   );

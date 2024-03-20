@@ -7,6 +7,8 @@ import propertyImage9 from "../assets/images/propertyImage9.jpg";
 import propertyImage10 from "../assets/images/propertyImage10.jpg";
 
 export function RentalPropertyListing() {
+
+
   // Sample property data array
   const propertyData = [
     {
