@@ -16,9 +16,9 @@ export function NavbarSalePropertyCard() {
       <Navbar
         variant="gradient"
         color="blue-gray"
-        className="mx-auto max-w-screen-xl from-blue-700  py-3"
+        className="mx-auto max-w-screen-3xl rounded-none from-blue-700  py-3"
       >
-        <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
+        <div className="ml-40 flex flex-wrap items-center justify-between gap-y-4 text-white">
           <div className="relative flex w-full gap-2 md:w-max">
             <Input
               type="search"
@@ -26,7 +26,7 @@ export function NavbarSalePropertyCard() {
               label="Find your location"
               className="pr-20"
               containerProps={{
-                className: "min-w-[288px]",
+                className: "min-w-[388px]",
               }}
             />
             <Button

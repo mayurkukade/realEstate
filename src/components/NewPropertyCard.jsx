@@ -2,7 +2,7 @@ import React from "react";
 import {NavbarSalePropertyCard} from "../components/NavbarSalePropertyCard"
 
 
-export function SalePropertyCard({ property }) {
+export function NewPropertyCard({ property }) {
   const {
     owner,
     price,

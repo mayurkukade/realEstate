@@ -2,7 +2,7 @@ import React from "react";
 import {NavbarSalePropertyCard} from "../components/NavbarSalePropertyCard"
 
 
-export function SalePropertyCard({ property }) {
+export function RentalPropertyCard({ property }) {
   const {
     owner,
     price,
@@ -119,9 +119,9 @@ export function SalePropertyCard({ property }) {
               </div>
 
               <div className="flex">
-                <i class="fa-solid fa-house-chimney fa-2x mr-3"></i>
+              <i class="fa-solid fa-user-shield fa-2x mr-3"></i>
                 <div>
-                  <div className="text-sm font-semibold">Transaction</div>
+                  <div className="text-sm font-semibold">Security</div>
                   <div className="text-xs">{transaction}</div>
                 </div>
               </div>
