@@ -26,29 +26,29 @@ import GardeningService from './Component/GardeningService';
 
 import { Button } from "@material-tailwind/react";
 
-import { PostPropertyCard } from "./components/PostPropertyCard";
-import { SalePropertyCard } from "./components/SalePropertyCard";
+import { PostPropertyCard } from "./Components/PostPropertyCard";
+import { SalePropertyCard } from "./Components/SalePropertyCard";
 
-import { Error_Page } from "./components/Error_Page";
+import { Error_Page } from "./Components/Error_Page";
 
-import { PropertyListing } from "./components/PropertyListing";
-import { NavbarSalePropertyCard } from "./components/NavbarSalePropertyCard";
+import { PropertyListing } from "./Components/PropertyListing";
+import { NavbarSalePropertyCard } from "./Components/NavbarSalePropertyCard";
 
-import { RentalPropertyListing } from "./components/RentalPropertyListing";
+import { RentalPropertyListing } from "./Components/RentalPropertyListing";
 
-import { NavbarBlue } from "./components/NavbarBlue";
-import { SalePropertyCardTwo } from "./components/SalePropertyCardTwo";
-import { MoreDetailsCard } from "./components/MoreDetailsCard";
-import { HorizontalCard } from "./components/PreViewPropertyCard";
-import { CardDefault } from "./components/PropertyServicesCard";
+import { NavbarBlue } from "./Components/NavbarBlue";
+import { SalePropertyCardTwo } from "./Components/SalePropertyCardTwo";
+import { MoreDetailsCard } from "./Components/MoreDetailsCard";
+import { HorizontalCard } from "./Components/PreViewPropertyCard";
+import { CardDefault } from "./Components/PropertyServicesCard";
 
-import { NewPropertyListing } from "./components/NewPropertyListing";
+import { NewPropertyListing } from "./Components/NewPropertyListing";
 
-import { PlotForSaleListing } from "./components/PlotForSaleListing";
-import { RentalPropertyNavbar } from "./components/RentalPropertyNavbar";
-import { ResalePropertyNavbar } from "./components/ResalePropertyNavbar";
-import { NewPropertyNavbar } from "./components/NewPropertyNavbar";
-import { PlotForSaleNavbar } from "./components/PlotForSaleNavbar";
+import { PlotForSaleListing } from "./Components/PlotForSaleListing";
+import { RentalPropertyNavbar } from "./Components/RentalPropertyNavbar";
+import { ResalePropertyNavbar } from "./Components/ResalePropertyNavbar";
+import { NewPropertyNavbar } from "./Components/NewPropertyNavbar";
+import { PlotForSaleNavbar } from "./Components/PlotForSaleNavbar";
 
 function App() {
   return (

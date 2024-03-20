@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarSalePropertyCard } from "../components/NavbarSalePropertyCard";
+import { NavbarSalePropertyCard } from "./NavbarSalePropertyCard";
 
 export function RentalPropertyCard({ property }) {
   const {
