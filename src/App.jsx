@@ -22,13 +22,15 @@ import DthService from './Component/DthService';
 import GardeningService from './Component/GardeningService';
 
 
-import  PlotForSalePage  from "./Components/PlotsForSalePage";
-import  NewPropertyPage  from "./Components/NewPropertyPage";
-import  RentalPropertyDetailPage  from "./Components/RentalPropertyDetailPage";
-import  RentalPropertyPage  from "./Components/RentalPropertyPage";
-import  ResalePropertyPage  from "./Components/ResalePropertyPage";
-import  Error_Page  from "./Components/Error_Page";
-import  PostPropertyCard  from "./Components/PostPropertyCard";
+import  PlotForSalePage  from "./components/PlotsForSalePage";
+import  NewPropertyPage  from "./components/NewPropertyPage";
+import  RentalPropertyDetailPage  from "./components/RentalPropertyDetailPage";
+import  RentalPropertyPage  from "./components/RentalPropertyPage";
+import  ResalePropertyPage  from "./components/ResalePropertyPage";
+import  Error_Page  from "./components/Error_Page";
+import  PostPropertyCard  from "./components/PostPropertyCard";
+import { NewPropertyListing } from "./components/NewPropertyListing";
+// import  PreViewPropertyCard  from "./components/PreViewPropertyCard";
 
 function App() {
   return (
@@ -68,7 +70,8 @@ function App() {
         </Route>
       </Routes>
     
-
+     <PostPropertyCard/>
+     {/* <PreViewPropertyCard/> */}
     <div>
       
     </div>

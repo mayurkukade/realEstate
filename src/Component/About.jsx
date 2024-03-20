@@ -156,12 +156,12 @@ function About() {
 
       <div className="px-20 text-center py-10 ">
         <div className="pb-4">
-          <h1 className="text-2xl text-[rgb(53,53,53)] font-semibold">
+          <h1 className="text-2xl font-serif text-[rgb(53,53,53)] font-semibold">
             WHY CHOOSE US
           </h1>
         </div>
         <div className="flex justify-center">
-          <span className="text-base text-[#353535] md:w-[800px] pb-6">
+          <span className="text-base font-playfair text-[#353535] md:w-[800px] pb-6">
             Real Estate is committed to rejuvenating Space Coast communities
             through our systematic and disciplined approach, and creating
             lasting change in every neighborhood we encounter.
