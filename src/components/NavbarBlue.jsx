@@ -13,7 +13,7 @@ export function NavbarBlue() {
         />
       </div>
 
-      <Navbar
+      {/* <Navbar
         variant="gradient"
         color="blue-gray"
         className="max-w-screen-3xl from-blue-700 px-52 py-3 rounded-none"
@@ -38,7 +38,7 @@ export function NavbarBlue() {
             </Button>
           </div>
         </div>
-      </Navbar>
+      </Navbar> */}
     </div>
   );
 }

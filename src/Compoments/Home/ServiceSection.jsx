@@ -12,34 +12,44 @@ export default function ServiceSection() {
       <div>
         <div className='flex gap-8'>
          {/* First part */}
+         <Link to="/rentalproperty">
           <div
             className={` bg-cover h-48 w-48 rounded-md`}
             style={{ backgroundImage: `url(${rentimg})` }}
           >
             <p className='text-white mt-2 ml-5 font-semibold'>Rent House</p>
           </div>
+          </Link>
          {/* Second part */}
+
+         <Link to="/resaleproperty">
           <div
             className={`bg-center bg-cover h-48 w-48 rounded-md ml-5`}
             style={{ backgroundImage: `url(${resealimg})` }}
           >
             <p className='text-white mt-2 ml-5 font-semibold'>Reseal House</p>
           </div>
+          </Link>
+
          {/* third part */}
+         <Link to="/newproperty">
           <div
             className={`bg-center bg-cover h-48 w-48 rounded-md ml-5`}
             style={{ backgroundImage: `url(${freshimg})` }}
           >
             <p className='text-white mt-2 ml-5 font-semibold'>Fresh Addition</p>
           </div>
+          </Link>
          {/* fourth part */}
+
+         <Link to="/plotforsale">
           <div
             className={` bg-cover h-48 w-48 rounded-md ml-5`}
             style={{ backgroundImage: `url(${plotsimg})` }}
           >
             <p className='text-white mt-2 ml-5 font-semibold'>Plots for sell</p>
           </div>
-
+          </Link>
          {/* fifth part */}
          <Link to="/services">
           <div

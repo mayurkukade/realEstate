@@ -2,7 +2,7 @@ import { Navbar, Button, Input } from "@material-tailwind/react";
 
 export function NavbarSalePropertyCard() {
   return (
-    <div>
+    <div className="mt-5">
       <div>
         <link
           rel="stylesheet"
@@ -13,32 +13,7 @@ export function NavbarSalePropertyCard() {
         />
       </div>
 
-      <Navbar
-        variant="gradient"
-        color="blue-gray"
-        className="mx-auto max-w-screen-3xl rounded-none from-blue-700  py-3"
-      >
-        <div className="ml-40 flex flex-wrap items-center justify-between gap-y-4 text-white">
-          <div className="relative flex w-full gap-2 md:w-max">
-            <Input
-              type="search"
-              color="white"
-              label="Find your location"
-              className="pr-20"
-              containerProps={{
-                className: "min-w-[388px]",
-              }}
-            />
-            <Button
-              size="sm"
-              color="white"
-              className="!absolute right-1 top-1 rounded"
-            >
-              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-            </Button>
-          </div>
-        </div>
-      </Navbar>
+      {/*  */}
 
       <div class="flex flex-col items-center justify-between gap-4 md:flex-row mx-auto max-w-screen-xl pt-2">
         <div class="block w-full overflow-hidden md:w-max">

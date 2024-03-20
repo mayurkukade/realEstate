@@ -22,33 +22,13 @@ import DthService from './Component/DthService';
 import GardeningService from './Component/GardeningService';
 
 
-
-
-import { Button } from "@material-tailwind/react";
-
-import { PostPropertyCard } from "./Components/PostPropertyCard";
-import { SalePropertyCard } from "./Components/SalePropertyCard";
-
-import { Error_Page } from "./Components/Error_Page";
-
-import { PropertyListing } from "./Components/PropertyListing";
-import { NavbarSalePropertyCard } from "./Components/NavbarSalePropertyCard";
-
-import { RentalPropertyListing } from "./Components/RentalPropertyListing";
-
-import { NavbarBlue } from "./Components/NavbarBlue";
-import { SalePropertyCardTwo } from "./Components/SalePropertyCardTwo";
-import { MoreDetailsCard } from "./Components/MoreDetailsCard";
-import { HorizontalCard } from "./Components/PreViewPropertyCard";
-import { CardDefault } from "./Components/PropertyServicesCard";
-
-import { NewPropertyListing } from "./Components/NewPropertyListing";
-
-import { PlotForSaleListing } from "./Components/PlotForSaleListing";
-import { RentalPropertyNavbar } from "./Components/RentalPropertyNavbar";
-import { ResalePropertyNavbar } from "./Components/ResalePropertyNavbar";
-import { NewPropertyNavbar } from "./Components/NewPropertyNavbar";
-import { PlotForSaleNavbar } from "./Components/PlotForSaleNavbar";
+import  PlotForSalePage  from "./Components/PlotsForSalePage";
+import  NewPropertyPage  from "./Components/NewPropertyPage";
+import  RentalPropertyDetailPage  from "./Components/RentalPropertyDetailPage";
+import  RentalPropertyPage  from "./Components/RentalPropertyPage";
+import  ResalePropertyPage  from "./Components/ResalePropertyPage";
+import  Error_Page  from "./Components/Error_Page";
+import  PostPropertyCard  from "./Components/PostPropertyCard";
 
 function App() {
   return (
@@ -76,6 +56,13 @@ function App() {
           <Route path="/gardservices" element={<GardeningService/> } />
         
           <Route path="/about" element={<About/> } />
+          
+          <Route path="/resaleproperty" element={<ResalePropertyPage/> } />
+          <Route path="/rentalproperty" element={<RentalPropertyPage/> } />
+          <Route path="/rentalpropertydetail" element={<RentalPropertyDetailPage/>} />
+          <Route path="/newproperty" element={<NewPropertyPage />} />
+          <Route path="/plotforsale" element={<PlotForSalePage />} />
+          <Route path="/*" element={<Error_Page/>} />
 
 
         </Route>
@@ -83,39 +70,7 @@ function App() {
     
 
     <div>
-      <div id="ErrorPage">{/* <Error_Page></Error_Page> */}</div>
-
-      <div id="ResalePropertyPage">
-        {/* <ResalePropertyNavbar></ResalePropertyNavbar>
-        <PropertyListing></PropertyListing> */}
-      </div>
-
-      <div id="RentalPropertyPage">
-        {/* <RentalPropertyNavbar></RentalPropertyNavbar>
-        <RentalPropertyListing></RentalPropertyListing> */}
-      </div>
-
-      <div id="RentalPropertyDetailPage">
-        {/* <NavbarBlue></NavbarBlue>
-        <SalePropertyCardTwo></SalePropertyCardTwo>
-        <MoreDetailsCard></MoreDetailsCard>
-        <HorizontalCard></HorizontalCard>
-        <CardDefault></CardDefault> */}
-      </div>
-
-      <div id="NewPropertyPage">
-        {/* <NewPropertyNavbar></NewPropertyNavbar>
-        <NewPropertyListing></NewPropertyListing> */}
-      </div>
-
-      <div id="PlotForSalePage">
-        <PlotForSaleNavbar></PlotForSaleNavbar>
-        <PlotForSaleListing></PlotForSaleListing>
-      </div>
-
-      <div id="PostPropertyPage">
-        {/* <PostPropertyCard></PostPropertyCard> */}
-      </div>
+      
     </div>
     </>
   );

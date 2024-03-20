@@ -19,7 +19,7 @@ const countryCodes = [
   { label: "+91 (IND)", value: "+91" },
 ];
 
-export function PostPropertyCard() {
+export default function PostPropertyCard() {
   const [formData, setFormData] = useState({
     countryCode: null,
   });
