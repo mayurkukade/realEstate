@@ -12,6 +12,12 @@ import React, { useState } from "react";
 import whatsapp from "../../assets/images/whatsapp.jpg";
 import icon from "../../assets/images/icon.jpg";
 import image from "../../assets/images/image.jpg";
+import PostPropertyIcon1 from "../../assets/images/PostPropertyIcon1.png";
+import PostPropertyIcon2 from "../../assets/images/PostPropertyIcon2.png";
+import PostPropertyIcon3 from "../../assets/images/PostPropertyIcon3.png";
+import PostPropertyImage1 from "../../assets/images/PostPropertyImage1.png";
+import PostPropertyImage2 from "../../assets/images/PostPropertyImage2.png";
+import PostPropertyImage3 from "../../assets/images/PostPropertyImage3.png";
 
 const countryCodes = [
   { label: "+1 (USA)", value: "+1" },
@@ -288,9 +294,92 @@ export function PostPropertyCard() {
           </div>
         </div>
 
-        <div>
-          <div>
-            <div></div>
+        <div className="flex justify-evenly mt-6">
+          <div id="col1" className="w-[350px] ">
+            <div className="h-[48px] w-[48px]">
+              <img src={PostPropertyIcon1} alt="Icon" />
+            </div>
+            <div className="text-base font-semibold mt-3">
+              01. Add details of your property
+            </div>
+            <div className="text-sm mt-2">
+              Begin by telling us the few basic details about your property like
+              your property type, locations, number of room, etc.
+            </div>
+          </div>
+
+          <div id="col2" className="w-[350px]">
+            <div className="h-[48px] w-[48px]">
+              <img src={PostPropertyIcon2} alt="Icon" />
+            </div>
+            <div className="text-base font-semibold mt-3">
+              02. Upload Photos & Videos
+            </div>
+            <div className="text-sm mt-2">
+              Upload photos & videos of your property either via your desktop
+              device or from your mobile phone.
+            </div>
+          </div>
+
+          <div id="col3" className="w-[350px]">
+            <div className="h-[48px] w-[48px]">
+              <img src={PostPropertyIcon3} alt="Icon" />
+            </div>
+            <div className="text-base font-semibold mt-3">
+              03. Add Pricing & Ownership
+            </div>
+            <div className="text-sm mt-2">
+              Just update your property's ownership details and your expected
+              price then your property is ready for posting.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-12">
+        <div className="grid place-content-center">
+          <div className="text-4xl  text-center w-96 font-semibold">
+            How it works
+          </div>
+        </div>
+
+        <div className="flex justify-evenly mt-6">
+          <div id="col1" className="w-[350px]">
+            <div className="h-[120px] w-[160px]">
+              <img src={PostPropertyImage1} alt="Icon" />
+            </div>
+            <div className="text-base font-semibold mt-3">
+              Step 1: Post your Property Ad
+            </div>
+            <div className="text-sm mt-2">
+              Enter all details like locality name, amenities, etc along with
+              uploading photos.
+            </div>
+          </div>
+
+          <div id="col2" className="w-[350px]">
+            <div className="h-[120px] w-[160px]">
+              <img src={PostPropertyImage2} alt="Icon" />
+            </div>
+            <div className="text-base font-semibold mt-3">
+              Step 2: Check Responses on Dashboard
+            </div>
+            <div className="text-sm mt-2">
+              Get acsess to Buyer/Tenant contact details & connect easily.
+            </div>
+          </div>
+
+          <div id="col3" className="w-[350px]">
+            <div className="h-[120px] w-[160px]">
+              <img src={PostPropertyImage3} alt="Icon" />
+            </div>
+            <div className="text-base font-semibold mt-3">
+              Step 3: Sell/Rent faster with instant connect
+            </div>
+            <div className="text-sm mt-2">
+              Negotiate with your prospective Buyer/Tenant and mutually close
+              the deal(site-visit).
+            </div>
           </div>
         </div>
       </div>

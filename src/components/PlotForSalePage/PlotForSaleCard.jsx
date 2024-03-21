@@ -1,5 +1,4 @@
 import React from "react";
-import { NavbarSalePropertyCard } from "../NavbarSalePropertyCard";
 
 export function PlotForSaleCard({ property }) {
   const {
