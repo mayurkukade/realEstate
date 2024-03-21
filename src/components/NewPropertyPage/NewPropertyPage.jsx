@@ -1,11 +1,10 @@
 import { NewPropertyListing } from "./NewPropertyListing";
-import { NewPropertyNavbar } from "./NewPropertyNavbar";
-
+import { PropertyPageNavbar } from "../PropertyPageNavbar";
 
 export function NewPropertyPage() {
   return (
     <div>
-      <NewPropertyNavbar></NewPropertyNavbar>
+      <PropertyPageNavbar></PropertyPageNavbar>
       <NewPropertyListing></NewPropertyListing>
     </div>
   );

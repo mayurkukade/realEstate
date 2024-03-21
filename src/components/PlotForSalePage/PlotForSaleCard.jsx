@@ -1,7 +1,7 @@
 import React from "react";
-import { NavbarSalePropertyCard } from "../components/NavbarSalePropertyCard";
+import { NavbarSalePropertyCard } from "../NavbarSalePropertyCard";
 
-export function RentalPropertyCard({ property }) {
+export function PlotForSaleCard({ property }) {
   const {
     owner,
     price,
@@ -19,22 +19,22 @@ export function RentalPropertyCard({ property }) {
   } = property;
 
   return (
-    <div className="grid place-content-center my-4">
-      <div>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
-      </div>
+    <div>
+      <div className="grid place-content-center my-4">
+        <div>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          />
+        </div>
 
-      <div
-        id="cardBody"
-        className=" text-gray-800 w-[1024px] border border-cyan-100 rounded-lg shadow-xl"
-      >
-        <div className="flex">
+        <div
+          id="cardBody"
+          className="flex text-gray-800 w-[1024px] border border-cyan-100 rounded-lg shadow-xl"
+        >
           <div id="col1" className="w-[330px] p-4 border-cyan-600">
             <div id="image">
               <img
@@ -74,17 +74,17 @@ export function RentalPropertyCard({ property }) {
             >
               <div id="column1" className="py-2 px-1 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-couch fa-2x mr-3"></i>
+                  <i class="fa-solid fa-chart-area fa-2x mr-3"></i>
                   <div>
-                    <div className="text-sm font-semibold">Furnishing</div>
+                    <div className="text-sm font-semibold">Plot Area</div>
                     <div className="text-xs">{furnishing}</div>
                   </div>
                 </div>
 
                 <div className="flex">
-                  <i class="fa-solid fa-chart-area fa-2x mr-3"></i>
+                  <i class="fa-brands fa-slideshare fa-2x mr-3"></i>
                   <div>
-                    <div className="text-sm font-semibold">Carpet Area</div>
+                    <div className="text-sm font-semibold">Open Sides</div>
                     <div className="text-xs">{carpetArea}</div>
                   </div>
                 </div>
@@ -92,9 +92,9 @@ export function RentalPropertyCard({ property }) {
 
               <div id="column2" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-bath fa-2x mr-3"></i>
+                  <i class="fa-solid fa-maximize fa-2x mr-3"></i>
                   <div>
-                    <div className="text-sm font-semibold">Bathroom</div>
+                    <div className="text-sm font-semibold">Dimension</div>
                     <div className="text-xs">{bathroom}</div>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export function RentalPropertyCard({ property }) {
                 <div className="flex">
                   <i class="fa-solid fa-stairs fa-2x mr-3"></i>
                   <div>
-                    <div className="text-sm font-semibold">Floor</div>
+                    <div className="text-sm font-semibold">Floor Allowed</div>
                     <div className="text-xs">{floor}</div>
                   </div>
                 </div>
@@ -110,17 +110,17 @@ export function RentalPropertyCard({ property }) {
 
               <div id="column3" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-car fa-2x mr-3"></i>
+                  <i class="fa-solid fa-user-tie fa-2x mr-3"></i>
                   <div>
-                    <div className="text-sm font-semibold">Parking</div>
+                    <div className="text-sm font-semibold">Ownership</div>
                     <div className="text-xs">{parking}</div>
                   </div>
                 </div>
 
                 <div className="flex">
-                  <i class="fa-solid fa-user-shield fa-2x mr-3"></i>
+                  <i class="fa-solid fa-house-chimney fa-2x mr-3"></i>
                   <div>
-                    <div className="text-sm font-semibold">Security</div>
+                    <div className="text-sm font-semibold">Transaction</div>
                     <div className="text-xs">{transaction}</div>
                   </div>
                 </div>

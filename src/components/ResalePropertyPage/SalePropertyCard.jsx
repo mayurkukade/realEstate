@@ -1,8 +1,7 @@
 import React from "react";
-import {NavbarSalePropertyCard} from "../components/NavbarSalePropertyCard"
+import { NavbarSalePropertyCard } from "../NavbarSalePropertyCard";
 
-
-export function NewPropertyCard({ property }) {
+export function SalePropertyCard({ property }) {
   const {
     owner,
     price,
@@ -21,7 +20,6 @@ export function NewPropertyCard({ property }) {
 
   return (
     <div className="grid place-content-center my-4">
-      
       <div>
         <link
           rel="stylesheet"

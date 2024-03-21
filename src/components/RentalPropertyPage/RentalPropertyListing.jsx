@@ -1,14 +1,12 @@
 import React from "react";
 import { RentalPropertyCard } from "./RentalPropertyCard";
-import propertyImage6 from "../assets/images/propertyImage6.jpg";
-import propertyImage7 from "../assets/images/propertyImage7.jpg";
-import propertyImage8 from "../assets/images/propertyImage8.jpg";
-import propertyImage9 from "../assets/images/propertyImage9.jpg";
-import propertyImage10 from "../assets/images/propertyImage10.jpg";
+import propertyImage6 from "../../assets/images/propertyImage6.jpg";
+import propertyImage7 from "../../assets/images/propertyImage7.jpg";
+import propertyImage8 from "../../assets/images/propertyImage8.jpg";
+import propertyImage9 from "../../assets/images/propertyImage9.jpg";
+import propertyImage10 from "../../assets/images/propertyImage10.jpg";
 
 export function RentalPropertyListing() {
-
-
   // Sample property data array
   const propertyData = [
     {
@@ -105,6 +103,13 @@ export function RentalPropertyListing() {
 
   return (
     <div>
+      <div
+        id="heading"
+        className="text-3xl font-semibold ml-64 mt-4 text-gray-800"
+      >
+        Owner Properties for Rent in Pune
+      </div>
+
       {propertyData.map((property) => (
         <RentalPropertyCard key={property.id} property={property} />
       ))}

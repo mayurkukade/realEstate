@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./App.css";
 import { Button } from "@material-tailwind/react";
 
-import { PlotForSalePage } from "./components/PlotsForSalePage";
-import { NewPropertyPage } from "./components/NewPropertyPage";
-import { RentalPropertyDetailPage } from "./components/RentalPropertyDetailPage";
-import { RentalPropertyPage } from "./components/RentalPropertyPage";
-import { ResalePropertyPage } from "./components/ResalePropertyPage";
-import { Error_Page } from "./components/Error_Page";
-import { PostPropertyCard } from "./components/PostPropertyCard";
+import { NewPropertyPage } from "./components/NewPropertyPage/NewPropertyPage";
+import { RentalPropertyDetailPage } from "./components/PropertyDetailPage/RentalPropertyDetailPage";
+import { RentalPropertyPage } from "./components/RentalPropertyPage/RentalPropertyPage";
+import { ResalePropertyPage } from "./components/ResalePropertyPage/ResalePropertyPage";
+import { Error_Page } from "./components/ErrorPage/Error_Page";
+import { PostPropertyCard } from "./components/PostPropertyPage/PostPropertyCard";
+import { PlotForSalePage } from "./components/PlotForSalePage/PlotForSalePage";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
 
       {/* <PlotForSalePage></PlotForSalePage> */}
 
-      {/* <PostPropertyCard></PostPropertyCard> */}
+      <PostPropertyCard></PostPropertyCard>
     </div>
   );
 }

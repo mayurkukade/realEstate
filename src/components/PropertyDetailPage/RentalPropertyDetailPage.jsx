@@ -4,7 +4,6 @@ import { HorizontalCard } from "./PreViewPropertyCard";
 import { CardDefault } from "./PropertyServicesCard";
 import { SalePropertyCardTwo } from "./SalePropertyCardTwo";
 
-
 export function RentalPropertyDetailPage() {
   return (
     <div>

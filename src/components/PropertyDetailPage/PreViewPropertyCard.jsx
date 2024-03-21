@@ -5,8 +5,8 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import Image1 from "../assets/images/Image1.jpg";
-import Image2 from "../assets/images/Image2.jpg";
+import Image1 from "../../assets/images/Image1.jpg";
+import Image2 from "../../assets/images/Image2.jpg";
 
 export function HorizontalCard() {
   return (

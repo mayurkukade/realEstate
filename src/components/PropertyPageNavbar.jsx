@@ -1,6 +1,6 @@
 import { Navbar, Button, Input } from "@material-tailwind/react";
 
-export function RentalPropertyNavbar() {
+export function PropertyPageNavbar() {
   return (
     <div>
       <div>
@@ -79,9 +79,6 @@ export function RentalPropertyNavbar() {
         </button>
       </div>
 
-      <div id="heading" className="text-3xl font-semibold ml-64 mt-4 text-gray-800">
-        Owner Properties for Rent in Pune
-      </div>
     </div>
   );
 }

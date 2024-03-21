@@ -4,7 +4,7 @@ import {
   CardBody,
   Typography,
 } from "@material-tailwind/react";
-import PropertyServicesCardImg from "../assets/images/PropertyServicesCardImg.jpg";
+import PropertyServicesCardImg from "../../assets/images/PropertyServicesCardImg.jpg";
 
 export function CardDefault() {
   return (

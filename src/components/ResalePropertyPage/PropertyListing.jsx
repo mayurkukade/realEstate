@@ -1,10 +1,10 @@
 import React from "react";
 import { SalePropertyCard } from "./SalePropertyCard";
-import propertyImage1 from "../assets/images/propertyImage1.jpg";
-import propertyImage2 from "../assets/images/propertyImage2.jpg";
-import propertyImage3 from "../assets/images/propertyImage3.jpg";
-import propertyImage4 from "../assets/images/propertyImage4.jpg";
-import propertyImage5 from "../assets/images/propertyImage5.jpg";
+import propertyImage1 from "../../assets/images/propertyImage1.jpg";
+import propertyImage2 from "../../assets/images/propertyImage2.jpg";
+import propertyImage3 from "../../assets/images/propertyImage3.jpg";
+import propertyImage4 from "../../assets/images/propertyImage4.jpg";
+import propertyImage5 from "../../assets/images/propertyImage5.jpg";
 
 export function PropertyListing() {
   // Sample property data array
@@ -103,6 +103,13 @@ export function PropertyListing() {
 
   return (
     <div>
+      <div
+        id="heading"
+        className="text-3xl font-semibold ml-64 mt-4 text-gray-800"
+      >
+        Owner Properties for Resale in Pune
+      </div>
+
       {propertyData.map((property) => (
         <SalePropertyCard key={property.id} property={property} />
       ))}

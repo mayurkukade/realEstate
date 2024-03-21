@@ -1,7 +1,7 @@
 import React from "react";
-import { NavbarSalePropertyCard } from "../components/NavbarSalePropertyCard";
+import { NavbarSalePropertyCard } from "../NavbarSalePropertyCard";
 
-export function PlotForSaleCard({ property }) {
+export function NewPropertyCard({ property }) {
   const {
     owner,
     price,
@@ -73,17 +73,17 @@ export function PlotForSaleCard({ property }) {
           >
             <div id="column1" className="py-2 px-1 justify-evenly space-y-4">
               <div className="flex">
-                <i class="fa-solid fa-chart-area fa-2x mr-3"></i>
+                <i class="fa-solid fa-couch fa-2x mr-3"></i>
                 <div>
-                  <div className="text-sm font-semibold">Plot Area</div>
+                  <div className="text-sm font-semibold">Furnishing</div>
                   <div className="text-xs">{furnishing}</div>
                 </div>
               </div>
 
               <div className="flex">
-                <i class="fa-brands fa-slideshare fa-2x mr-3"></i>
+                <i class="fa-solid fa-chart-area fa-2x mr-3"></i>
                 <div>
-                  <div className="text-sm font-semibold">Open Sides</div>
+                  <div className="text-sm font-semibold">Carpet Area</div>
                   <div className="text-xs">{carpetArea}</div>
                 </div>
               </div>
@@ -91,9 +91,9 @@ export function PlotForSaleCard({ property }) {
 
             <div id="column2" className="p-2 justify-evenly space-y-4">
               <div className="flex">
-              <i class="fa-solid fa-maximize fa-2x mr-3"></i>
+                <i class="fa-solid fa-bath fa-2x mr-3"></i>
                 <div>
-                  <div className="text-sm font-semibold">Dimension</div>
+                  <div className="text-sm font-semibold">Bathroom</div>
                   <div className="text-xs">{bathroom}</div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export function PlotForSaleCard({ property }) {
               <div className="flex">
                 <i class="fa-solid fa-stairs fa-2x mr-3"></i>
                 <div>
-                  <div className="text-sm font-semibold">Floor Allowed</div>
+                  <div className="text-sm font-semibold">Floor</div>
                   <div className="text-xs">{floor}</div>
                 </div>
               </div>
@@ -109,9 +109,9 @@ export function PlotForSaleCard({ property }) {
 
             <div id="column3" className="p-2 justify-evenly space-y-4">
               <div className="flex">
-              <i class="fa-solid fa-user-tie fa-2x mr-3"></i>
+                <i class="fa-solid fa-car fa-2x mr-3"></i>
                 <div>
-                  <div className="text-sm font-semibold">Ownership</div>
+                  <div className="text-sm font-semibold">Parking</div>
                   <div className="text-xs">{parking}</div>
                 </div>
               </div>
