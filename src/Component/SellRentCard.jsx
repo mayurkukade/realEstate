@@ -55,14 +55,14 @@ function SellRentCard() {
       onSubmit={handleSubmit}
       className="m-0 p-0 border-0 font-normal items-baseline"
     >
-      <div className="w-[412px] md:max-w-[600px] m-auto md-w-[1200px] flex justify-center">
+      <div className="w-[412px] md:max-w-[600px] font-[serif] m-auto md-w-[1200px] flex justify-center">
         <div className="md:w-[500px] m-0 py-0 ">
           <div className="pt-16 pb-8 px-0 box-border md:w-[500px] ">
             <span>
-              <h1 className="text-3xl font-bold pb-2.5">
+              <h1 className="text-3xl font-bold font-[opensans] pb-2.5">
                 Sell or Rent your Property
               </h1>
-              <div className="md:w-[500px]">
+              <div className="md:w-[500px] font-[opensans]">
                 You are posting this property for{" "}
                 <span className="w-12 bg-[#fc3] inline-block text-center font-semibold border rounded-sm">
                   Free
@@ -96,7 +96,7 @@ function SellRentCard() {
                         </span>
                         <label
                           htmlFor="owner"
-                          className="cursor-pointer relative text-[#303030]"
+                          className="cursor-pointer font-[] relative text-[#303030]"
                         >
                           Owner
                         </label>

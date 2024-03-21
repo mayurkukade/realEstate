@@ -26,12 +26,12 @@ function Services() {
 
     <section className='w-auto h-auto mt-8'>  
       <div className=' font-semibold text-2xl '>
-        <h1 className='flex justify-center text-center'>
+        <h1 className='flex justify-center font-[serif] text-center'>
             Different Services That Make Your Life Easy
             </h1>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-16 mx-10 justify-center p-14 md:p-20'>
+      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-16 mx-10 justify-center p-14 md:p-20 font-[Lato]'>
         <ServiceCard 
          imageSrc={AC}  altText='AC' description='AC Services' onClick={()=>alert("Clicked")} 
          />

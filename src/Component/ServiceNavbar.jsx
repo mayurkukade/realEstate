@@ -13,7 +13,7 @@ import {
         className="mx-5 bg-[#4a61e3] px-4 py-3 "
       >
         <div className="flex flex-wrap items-center justify-between gap-y-4 text-white Cap">
-          <div className="relative flex w-full gap-2 md:w-max">
+          <div className="relative flex w-full gap-2 md:w-max font-[Times]">
             <Input
               type="search"
               color="white"
@@ -26,7 +26,7 @@ import {
             <Button
               size="sm"
               color="white"
-              className="!absolute right-1 top-1 rounded hover:bg-gray-100"
+              className="!absolute right-1 top-1 font-[Times] rounded hover:bg-gray-100"
             >
               Search
             </Button>
@@ -39,14 +39,14 @@ import {
             <Button
               size="sm"
               color="white"
-              className="bg-[#ffffff] border capitalize text-sm font-normal mr-5"
+              className="bg-[#ffffff] border capitalize text-sm font-[Times] font-normal mr-5"
             >
               Services
             </Button>
             <Button
               size="sm"
               color="white"
-              className="bg-[#ffffff] border capitalize text-sm font-normal"
+              className="bg-[#ffffff] border capitalize font-[Times] text-sm font-normal"
             >
               Top Service Providers
             </Button>
@@ -56,7 +56,7 @@ import {
             <Button
               size="sm"
               color="white"
-              className="flex text-end justify-end items-end rounded-full bg-[#ffffff]  border capitalize text-sm font-normal px-5"
+              className="flex text-end justify-end items-end rounded-full bg-[#ffffff]  border capitalize text-sm font-normal font-[Times] px-5"
             >
             Sort by : Relevance
             </Button>

@@ -9,9 +9,9 @@ function ServiceProvider({ serviceProviders }) {
         
       {serviceProviders.map((provider, index) => (
         <div>
-                <h1 className='text-2xl font-semibold text-center mt-2 underline '>{provider.header}</h1>
+                <h1 className='text-2xl font-semibold font-[Lato] text-center mt-2 underline '>{provider.header}</h1>
 
-        <div key={index} className='card flex flex-col lg:flex-row bg-[#ffffff] rounded-xl shadow-xl mx-10 md:mx-20 lg:mx-36 p-5 mt-10  hover:shadow-2xl cursor-pointer mb-10 border'>
+        <div key={index} className='card flex flex-col lg:flex-row bg-[#ffffff] rounded-xl shadow-xl mx-10 md:mx-20 lg:mx-36 p-5 mt-10  hover:shadow-2xl cursor-pointer mb-10 border font-[Cambria]'>
           <div className='mx-4 '>
             <div className='flex items-center '>
               <img className='border rounded-full w-[70px]' src={provider.image} alt={provider.name} />
@@ -44,7 +44,7 @@ function ServiceProvider({ serviceProviders }) {
           <div className='md:ml-6'>
             <div className='text-end md:mb-4 md:mr-2'><Rating value={4} /></div>
             <div>
-              <h1 className='text-center  font-mono font-normal text-[24px] md:mb-5'>We are here to help you...</h1>
+              <h1 className='text-center font-[cursive] font-normal  text-[24px] md:mb-5'>We are here to help you...</h1>
               <div className='flex flex-wrap mx-2 items-center md:flex-row gap-5 ml-10 '>
                 {provider.images.map((image, index) => (
                   <img key={index} className='w-[115px] h-[110px] rounded-lg' src={image} alt="" />
