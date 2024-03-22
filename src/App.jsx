@@ -23,10 +23,11 @@ function App() {
 
   return (
     <>
-    {/* <About/>  */}
-    {/* <SellRentCard/> */}
-    {/* <Services/> */}
-    <ACService/>
+     <ACService/>
+    <About/> 
+    <SellRentCard/>
+    <Services/>
+   
     {/* <CarpenterService/> */}
     {/* <DthService/> */}
     {/* <PlumbingService/> */}

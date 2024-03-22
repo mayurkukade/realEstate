@@ -5,11 +5,10 @@ import { ServiceNavbar } from './ServiceNavbar';
 function ServiceProvider({ serviceProviders }) {
   return (
     <section className='w-full min-h-screen '>
-      <ServiceNavbar/>
-        
+      <ServiceNavbar/>       
       {serviceProviders.map((provider, index) => (
         <div>
-                <h1 className='text-2xl font-semibold font-[Lato] text-center mt-2 underline '>{provider.header}</h1>
+          <h1 className='text-2xl font-semibold font-[serif] text-center mt-2 underline '>{provider.header}</h1>
 
         <div key={index} className='card flex flex-col lg:flex-row bg-[#ffffff] rounded-xl shadow-xl mx-10 md:mx-20 lg:mx-36 p-5 mt-10  hover:shadow-2xl cursor-pointer mb-10 border font-[Cambria]'>
           <div className='mx-4 '>
@@ -17,7 +16,7 @@ function ServiceProvider({ serviceProviders }) {
               <img className='border rounded-full w-[70px]' src={provider.image} alt={provider.name} />
               <div className='card p-1 ml-2'>
                 <h1 className='font-bold text-[18px]'>{provider.name}</h1>
-                <span className='text-gray-600  flex  w-32 text-sm font-medium'>{provider.company}</span>
+                <span className='text-gray-600 flex w-32 text-sm font-medium'>{provider.company}</span>
               </div>
             </div>
 
@@ -44,7 +43,7 @@ function ServiceProvider({ serviceProviders }) {
           <div className='md:ml-6'>
             <div className='text-end md:mb-4 md:mr-2'><Rating value={4} /></div>
             <div>
-              <h1 className='text-center font-[cursive] font-normal  text-[24px] md:mb-5'>We are here to help you...</h1>
+              <h1 className='text-center font-[montserrat] font-normal  text-[24px] md:mb-5'>We are here to help you...</h1>
               <div className='flex flex-wrap mx-2 items-center md:flex-row gap-5 ml-10 '>
                 {provider.images.map((image, index) => (
                   <img key={index} className='w-[115px] h-[110px] rounded-lg' src={image} alt="" />
