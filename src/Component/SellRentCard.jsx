@@ -62,7 +62,7 @@ function SellRentCard() {
               <h1 className="text-3xl font-bold font-[serif] pb-2.5">
                 Sell or Rent your Property
               </h1>
-              <div className="md:w-[500px] font-[opensans]">
+              <div className="md:w-[500px] font-[serif]">
                 You are posting this property for{" "}
                 <span className="w-12 bg-[#fc3] inline-block text-center font-semibold border rounded-sm">
                   Free
@@ -96,7 +96,7 @@ function SellRentCard() {
                         </span>
                         <label
                           htmlFor="owner"
-                          className="cursor-pointer font-[] relative text-[#303030]"
+                          className="cursor-pointer relative text-[#303030]"
                         >
                           Owner
                         </label>
