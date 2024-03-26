@@ -4,9 +4,9 @@ import {
   CardBody,
   Typography,
 } from "@material-tailwind/react";
-import PropertyServicesCardImg from "../../assets/images/PropertyServicesCardImg.jpg";
+import PropertyServicesCardImg from "../assets/images/PropertyServicesCardImg.jpg";
 
-export function CardDefault() {
+export function PropertyServicesCard() {
   return (
     <div className="grid place-content-center">
       <div className="m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl">

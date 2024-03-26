@@ -3,12 +3,15 @@ import "./App.css";
 import { Button } from "@material-tailwind/react";
 
 import { NewPropertyPage } from "./components/NewPropertyPage/NewPropertyPage";
-import { RentalPropertyDetailPage } from "./components/PropertyDetailPage/RentalPropertyDetailPage";
+import { RentalPropertyDetailPage } from "./components/RentalPropertyDetailPage/RentalPropertyDetailPage";
 import { RentalPropertyPage } from "./components/RentalPropertyPage/RentalPropertyPage";
 import { ResalePropertyPage } from "./components/ResalePropertyPage/ResalePropertyPage";
 import { Error_Page } from "./components/ErrorPage/Error_Page";
 import { PostPropertyCard } from "./components/PostPropertyPage/PostPropertyCard";
 import { PlotForSalePage } from "./components/PlotForSalePage/PlotForSalePage";
+import { NewPropertyDetailPage } from "./components/NewPropertyDetailPage/NewPropertyDetailPage";
+import { PlotForSaleDetailPage } from "./components/PlotForSaleDetailPage/PlotForSaleDetailPage";
+import { ResalePropertyDetailPage } from "./components/ResalePropertyDetailPage/ResalePropertyDetailPage";
 
 function App() {
   return (
@@ -17,15 +20,21 @@ function App() {
 
       {/* <ResalePropertyPage></ResalePropertyPage> */}
 
+      {/* <ResalePropertyDetailPage></ResalePropertyDetailPage> */}
+
       {/* <RentalPropertyPage></RentalPropertyPage> */}
 
-      {/* <RentalPropertyDetailPage></RentalPropertyDetailPage> */}
+      <RentalPropertyDetailPage></RentalPropertyDetailPage>
 
       {/* <NewPropertyPage></NewPropertyPage> */}
 
+      {/* <NewPropertyDetailPage></NewPropertyDetailPage> */}
+
       {/* <PlotForSalePage></PlotForSalePage> */}
 
-      <PostPropertyCard></PostPropertyCard>
+      {/* <PlotForSaleDetailPage></PlotForSaleDetailPage> */}
+
+      {/* <PostPropertyCard></PostPropertyCard> */}
     </div>
   );
 }

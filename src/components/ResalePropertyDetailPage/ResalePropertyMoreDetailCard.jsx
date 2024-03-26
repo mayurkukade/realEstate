@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 
-export function MoreDetailsCard() {
+export function ResalePropertyMoreDetailCard() {
   return (
     <div className="grid place-content-center">
       <div

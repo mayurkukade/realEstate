@@ -5,10 +5,10 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import Image1 from "../../assets/images/Image1.jpg";
-import Image2 from "../../assets/images/Image2.jpg";
+import Image1 from "../assets/images/Image1.jpg";
+import Image2 from "../assets/images/Image2.jpg";
 
-export function HorizontalCard() {
+export function PreViewPropertyCard() {
   return (
     <div className="grid place-content-center">
       <div className=" m-4 p-6 w-[1100px] border rounded-lg border-cyan-100 shadow-xl">
