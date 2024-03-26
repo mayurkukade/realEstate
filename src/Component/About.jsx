@@ -50,12 +50,12 @@ function About() {
         <div className=" md:w-auto flex flex-wrap flex-row justify-center px-20">
           <div className="py-[40px] flex flex-col text-center">
             <div>
-              <h2 className="text-xl text-[#353535] py-2 font-[Times]  font-semibold">
+              <h2 className="text-xl text-[#353535] py-2 font-[serif]  font-semibold">
                 A REAL ESTATE SOLUTIONS COMPANY
               </h2>
             </div>
             <div>
-              <h1 className="text-[34px] md:text-[58px] font-[Times] text-[#353535]">
+              <h1 className="text-[34px] md:text-[58px] font-[Lato] text-[#353535]">
                 TRUE HOMES PROPERTY GROUP, LLC
               </h1>
             </div>
@@ -69,7 +69,7 @@ function About() {
             <h1 className="text-2xl text-[#353535] font-[serif] font-semibold pb-3">
               OUR FAVORITE QUOTE
             </h1>
-            <p className="text-base text-[#353535] pb-2">
+            <p className="text-base font-[Lato]  text-[#353535] pb-2">
               "To give real service you must add something which cannot be
               bought or measured with money, and that is sincerity and
               integrity."
@@ -81,7 +81,7 @@ function About() {
           </div>
           <div className="float-right w-[740px] text-[#353535]">
             <h1 className="text-2xl font-semibold font-[serif]">ABOUT US</h1>
-            <div className="pb-2 pt-2 text-base">
+            <div className="pb-2 pt-2 text-base font-[Lato]">
               <span>
                 Real Estate Property Group is a professional, full service real
                 estate solutions firm that buys and sells properties throughout
@@ -90,7 +90,7 @@ function About() {
                 buyers and landlords.
               </span>
             </div>
-            <div className="text-base ">
+            <div className="text-base font-[Lato] ">
               <span>
                 At Real Estate, our team is highly motivated, knowledgeable,
                 ethical and resourceful. Qualified to handle any real estate
@@ -114,7 +114,7 @@ function About() {
         </div>
 
         <div className="flex justify-center">
-          <span className="text-base text-[#353535] md:w-[600px]">
+          <span className="text-base text-[#353535] font-[Lato] md:w-[600px]">
             At Real Estate, it's our goal to not only have a positive effect on
             ourselves and our families - but also to inspire, motivate, and
             create lasting change in everyone we encounter
@@ -128,7 +128,7 @@ function About() {
             <h1 className="text-[24px] pb-7 font-[serif] md:pb-8 font-semibold">
               COMMUNITY REJUVENATION
             </h1>
-            <p className="text-base pb-7 md:pb-4 font-medium">
+            <p className="text-base pb-7 md:pb-4 font-medium font-[Lato]">
               We aim to rejuvenate neighborhoods and increase the standard of
               living by improving the overall quality of housing for the
               residents
@@ -138,14 +138,14 @@ function About() {
             <h1 className="text-[24px] pb-4 md:pb-2 font-[serif] font-semibold ">
               SOLUTIONS & SYSTEMS ORIENTED
             </h1>
-            <p className="text-base pb-7 md:pb-4 font-medium">
+            <p className="text-base pb-7 md:pb-4 font-medium font-[Lato]">
               Our core business lies within our systems, education and knowledge
               of the real estate industry
             </p>
           </div>
           <div className="md:w-1/3">
             <h1 className="text-[24px] pb-7 md:pb-8 font-semibold font-[serif]">TEAM APPROACH</h1>
-            <p className="text-base font-medium">
+            <p className="text-base font-medium font-[Lato]">
               We have an aggressive team approach, and a top-notch ability to
               expand our client base through our knowledge of deal structuring
               and advanced real estate techniques
@@ -161,7 +161,7 @@ function About() {
           </h1>
         </div>
         <div className="flex justify-center">
-          <span className="text-base text-[#353535] md:w-[800px] pb-6">
+          <span className="text-base text-[#353535] font-[Lato] md:w-[800px] pb-6">
             Real Estate is committed to rejuvenating Space Coast communities
             through our systematic and disciplined approach, and creating
             lasting change in every neighborhood we encounter.
@@ -236,19 +236,19 @@ function About() {
           <h1 className="text-[24px] pb-5 ">
             <i class="fa-solid fa-envelope"></i>
           </h1>
-          <p className="text-base pb-4">Ben.Bazemore@ RealEstate.com</p>
+          <p className="text-base pb-4 font-[Lato]">Ben.Bazemore@ RealEstate.com</p>
         </div>
         <div className="md:w-1/3 pb-5">
           <h1 className="text-[24px] pb-4 ">
             <i class="fa-solid fa-phone"></i>
           </h1>
-          <p className="text-base pb-4">321.323.9507</p>
+          <p className="text-base pb-4 font-[Lato]">321.323.9507</p>
         </div>
         <div className="md:w-1/3">
           <h1 className="text-[24px] pb-4">
             <i class="fa-solid fa-location-dot"></i>
           </h1>
-          <p className="text-base">PO Box 140398, Melbourne, FL 32940</p>
+          <p className="text-base font-[Lato]">PO Box 140398, Melbourne, FL 32940</p>
         </div>
       </div>
     </div>

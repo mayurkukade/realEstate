@@ -31,7 +31,7 @@ function Services() {
             </h1>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-16 mx-10 justify-center p-14 md:p-20 font-[poppin]'>
+      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-16 mx-10 justify-center p-14 md:p-20 font-[Lato]'>
         <ServiceCard 
          imageSrc={AC}  altText='AC' description='AC Services' onClick={()=>alert("Clicked")} 
          />

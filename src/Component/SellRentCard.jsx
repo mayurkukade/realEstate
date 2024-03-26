@@ -55,7 +55,7 @@ function SellRentCard() {
       onSubmit={handleSubmit}
       className="m-0 p-0 border-0 font-normal items-baseline"
     >
-      <div className="w-[412px] md:max-w-[600px] font-[cambria] m-auto md-w-[1200px] flex justify-center">
+      <div className="w-[412px] md:max-w-[600px] font-[Lato] m-auto md-w-[1200px] flex justify-center">
         <div className="md:w-[500px] m-0 py-0 ">
           <div className="pt-16 pb-8 px-0 box-border md:w-[500px] ">
             <span>
@@ -73,7 +73,7 @@ function SellRentCard() {
 
           <div className="border-t-0 border-solid">
             <div className="pt-2.5 pb-5 ">
-              <div className="text-lg pb-7 font-bold text-[#303030] ">
+              <div className="text-lg pb-7 font-[serif] font-bold text-[#303030] ">
                 Personal Details
               </div>
               <div id="formEle" className=" float-left w-[315px] pb-5">
@@ -235,7 +235,7 @@ function SellRentCard() {
                 </div>
 
                 <div id="property" className="pt-2 pb-4">
-                  <div className="text-lg  pb-5 font-bold text-[#303030]">
+                  <div className="text-lg  pb-5 font-bold font-[serif] text-[#303030]">
                     Property Details{" "}
                   </div>
                   <div className="w-[360px] float-left pb-5 text-[#303030]">
@@ -311,7 +311,7 @@ function SellRentCard() {
 
                 <div id="propLocation " className="float-left">
                   <div className="pt-[10px] pb-[15px] ">
-                    <div className="pb-4 text-lg font-bold text-[#303030]">
+                    <div className="pb-4 text-lg font-bold font-[serif] text-[#303030]">
                       Property Location
                     </div>
                     <div className="w-full text-sm md:text-base pb-2">City</div>
