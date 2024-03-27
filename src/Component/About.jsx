@@ -40,7 +40,7 @@ function About() {
             className="w-full h-full absolute object-cover align-middle overflow-clip "
           />
           <div className="relative">
-            <h1 className="text-[#fff] text-6xl font-[serif] font-bold text-center ">
+            <h1 className="text-[#fff] text-6xl font-[Lato] font-bold text-center ">
               ABOUT US
             </h1>
           </div>
@@ -50,12 +50,12 @@ function About() {
         <div className=" md:w-auto flex flex-wrap flex-row justify-center px-20">
           <div className="py-[40px] flex flex-col text-center">
             <div>
-              <h2 className="text-xl text-[#353535] py-2 font-[serif]  font-semibold">
+              <h2 className="text-xl text-[#353535] py-2 font-[Poppins]  font-semibold">
                 A REAL ESTATE SOLUTIONS COMPANY
               </h2>
             </div>
             <div>
-              <h1 className="text-[34px] md:text-[58px] font-[Lato] text-[#353535]">
+              <h1 className="text-[34px] md:text-[58px] font-[Poppins] text-[#353535]">
                 TRUE HOMES PROPERTY GROUP, LLC
               </h1>
             </div>
@@ -66,7 +66,7 @@ function About() {
       <div id="aboutUs" className="w-full">
         <div className="flex flex-wrap flex-row px-20 w-full gap-5 pt-8 pb-8  bg-[rgba(238,238,238,0.66)]">
           <div className="w-[350px] md-w-1/3 md:float-left">
-            <h1 className="text-2xl text-[#353535] font-[serif] font-semibold pb-3">
+            <h1 className="text-2xl text-[#353535] font-[Poppins] font-semibold pb-3">
               OUR FAVORITE QUOTE
             </h1>
             <p className="text-base font-[Lato]  text-[#353535] pb-2">
@@ -74,13 +74,13 @@ function About() {
               bought or measured with money, and that is sincerity and
               integrity."
             </p>
-            <span className="text-lg font-semibold text-[#DDB55D] ">
+            <span className="text-lg font-semibold font-[Lato] text-[#DDB55D] ">
               -Douglas Adams-
               <p className="text-sm text-[#DDB55D]">Author</p>
             </span>
           </div>
           <div className="float-right w-[740px] text-[#353535]">
-            <h1 className="text-2xl font-semibold font-[serif]">ABOUT US</h1>
+            <h1 className="text-2xl font-semibold font-[Poppins]">ABOUT US</h1>
             <div className="pb-2 pt-2 text-base font-[Lato]">
               <span>
                 Real Estate Property Group is a professional, full service real
@@ -108,7 +108,7 @@ function About() {
 
       <div className="px-20 text-center py-8 ">
         <div className="pb-4">
-          <h1 className="md:text-[58px] text-[34px] font-[serif] text-[rgb(53,53,53)]">
+          <h1 className="md:text-[58px] text-[34px] font-[Poppins] text-[rgb(53,53,53)]">
             OUR APPROACH
           </h1>
         </div>
@@ -125,7 +125,7 @@ function About() {
       <div className="relative py-4">
         <div className=" md:flex flex-row px-20 justify-center gap-8 text-center overflow-clip bg-gray-100 text-[#353535] relative p-10">
           <div className="md:w-1/3  ">
-            <h1 className="text-[24px] pb-7 font-[serif] md:pb-8 font-semibold">
+            <h1 className="text-[24px] pb-7 font-[Poppins] md:pb-8 font-semibold">
               COMMUNITY REJUVENATION
             </h1>
             <p className="text-base pb-7 md:pb-4 font-medium font-[Lato]">
@@ -135,7 +135,7 @@ function About() {
             </p>
           </div>
           <div className="md:w-1/3 ">
-            <h1 className="text-[24px] pb-4 md:pb-2 font-[serif] font-semibold ">
+            <h1 className="text-[24px] pb-4 md:pb-2 font-[Poppins] font-semibold ">
               SOLUTIONS & SYSTEMS ORIENTED
             </h1>
             <p className="text-base pb-7 md:pb-4 font-medium font-[Lato]">
@@ -144,7 +144,7 @@ function About() {
             </p>
           </div>
           <div className="md:w-1/3">
-            <h1 className="text-[24px] pb-7 md:pb-8 font-semibold font-[serif]">TEAM APPROACH</h1>
+            <h1 className="text-[24px] pb-7 md:pb-8 font-semibold font-[Poppins]">TEAM APPROACH</h1>
             <p className="text-base font-medium font-[Lato]">
               We have an aggressive team approach, and a top-notch ability to
               expand our client base through our knowledge of deal structuring
@@ -156,7 +156,7 @@ function About() {
 
       <div className="px-20 text-center py-10 ">
         <div className="pb-4">
-          <h1 className="text-2xl text-[rgb(53,53,53)] font-[serif] font-semibold">
+          <h1 className="text-2xl text-[rgb(53,53,53)] font-[Poppins] font-semibold">
             WHY CHOOSE US
           </h1>
         </div>
@@ -178,7 +178,7 @@ function About() {
             (item, index) =>
               index === current && (
                 <div key={index}>
-                  <h1 className="pb-6 text-4xl flex font-[serif] justify-center">
+                  <h1 className="pb-6 text-4xl flex font-[Poppins] justify-center">
                     Testimonials
                   </h1>
                   <div>

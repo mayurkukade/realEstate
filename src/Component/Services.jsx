@@ -26,7 +26,7 @@ function Services() {
 
     <section className='w-auto h-auto mt-8'>  
       <div className=' font-semibold text-2xl '>
-        <h1 className='flex justify-center font-[serif] text-center'>
+        <h1 className='flex justify-center font-[Lato] text-center'>
             Different Services That Make Your Life Easy
             </h1>
       </div>

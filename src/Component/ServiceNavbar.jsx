@@ -13,7 +13,7 @@ import {
         className="mx-5 bg-[#4a61e3] px-4 py-3 "
       >
         <div className="flex flex-wrap items-center justify-between gap-y-4 text-white Cap">
-          <div className="relative flex w-full gap-2 md:w-max font-[serif]">
+          <div className="relative flex w-full gap-2 md:w-max font-[Lato]">
             <Input
               type="search"
               color="white"
@@ -26,7 +26,7 @@ import {
             <Button
               size="sm"
               color="white"
-              className="!absolute right-1 top-1 font-[serif] rounded hover:bg-gray-100"
+              className="!absolute right-1 top-1 font-[Lato] rounded hover:bg-gray-100"
             >
               Search
             </Button>

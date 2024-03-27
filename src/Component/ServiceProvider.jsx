@@ -8,10 +8,10 @@ function ServiceProvider({ serviceProviders }) {
       <ServiceNavbar/>       
       {serviceProviders.map((provider, index) => (
         <div>
-          <h1 className='text-2xl font-semibold font-[serif] text-center mt-2 underline '>{provider.header}</h1>
+          <h1 className='text-2xl font-semibold font-[Poppins] text-center mt-2 underline '>{provider.header}</h1>
 
-        <div key={index} className='card flex flex-col lg:flex-row bg-[#ffffff] rounded-xl shadow-xl mx-10 md:mx-20 lg:mx-36 p-5 mt-10  hover:shadow-2xl cursor-pointer mb-10 border font-[Cambria]'>
-          <div className='mx-4 '>
+        <div key={index} className='card flex flex-col lg:flex-row bg-[#ffffff] rounded-xl shadow-xl mx-10 md:mx-20 lg:mx-36 p-5 mt-10  hover:shadow-2xl cursor-pointer mb-10 border font-[Lato]'>
+          <div className='mx-4'>
             <div className='flex items-center '>
               <img className='border rounded-full w-[70px]' src={provider.image} alt={provider.name} />
               <div className='card p-1 ml-2'>
