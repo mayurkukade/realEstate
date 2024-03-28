@@ -15,6 +15,7 @@ module.exports = withMT({
         'poppins': ['Poppins', 'Arial', 'sans-serif'],
         'raleway': ['Raleway', 'Arial', 'sans-serif'],
         'ubuntu': ['Ubuntu', 'Arial', 'sans-serif'],
+        'ar-decode': ['"AR DECODE"', 'serif'],
       },
     },
   },

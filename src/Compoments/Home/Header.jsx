@@ -5,17 +5,17 @@ export default function Header() {
   return (
     <div className="flex justify-center">
       <div>
-        <div className="mt-10 flex ml-48">
+        <div className="mt-10 flex ml-[12rem]">
           <div>
             <p
-              className="text-[3rem] text-[#1F2046] "
-              style={{ fontFamily: "Kalam" }}
+              className="text-[4rem] text-[#1F2046] font-ar-decode font-bold"
+              
             >
               Where Dreams{" "}
             </p>
             <span
-              className="text-[3rem] text-[#1F2046] ml-5 "
-              style={{ fontFamily: "Kalam" }}
+              className="text-[4rem] text-[#1F2046] ml-3 font-ar-decode font-bold"
+              
             >
               Comes True{" "}
             </span>

@@ -70,11 +70,9 @@ function App() {
         </Route>
       </Routes>
     
-     <PostPropertyCard/>
+     {/* <PostPropertyCard/> */}
      {/* <PreViewPropertyCard/> */}
-    <div>
-      
-    </div>
+    
     </>
   );
 }
