@@ -23,13 +23,13 @@ export function RentalPropertyDetailCard() {
     <div className="grid place-content-center">
       <div
         id="cardHeading"
-        className="m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl  text-lg"
+        className="font-[lato] m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl  text-lg"
       >
-        <div id="heading" className="pt-2">
+        <div id="heading" className="font-[poppins] pt-2">
           <div id="line1" className="flex my-1">
             <div>₹ 90.0 Lac</div>
             <div className="px-4">EMI- ₹ 41k</div>
-            <span className="leading-5 text-lg">|</span>
+            <span className="leading-5 text-lg pt-1">|</span>
 
             <div className=" flex justify-evenly">
               <div className="px-4">How much loan can I get?</div>
@@ -107,7 +107,7 @@ export function RentalPropertyDetailCard() {
             )}
           </div>
 
-          <div id="information" className="pl-6 mt-4 text-sm text-gray-900 ">
+          <div id="information" className="pl-6 mt-4 text-sm  ">
             <div
               id="iconInformation"
               className="flex gap-6 p-3 bg-gray-200 rounded-lg w-fit"
@@ -133,7 +133,7 @@ export function RentalPropertyDetailCard() {
               <div id="row1" className="flex py-2 px-1 justify-start">
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-regular fa-building fa-2x mr-2 pt-1"></i>
+                    <i class="fa-regular fa-building fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">
@@ -145,7 +145,7 @@ export function RentalPropertyDetailCard() {
 
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-stairs fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-stairs fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">Floor</div>
@@ -155,7 +155,7 @@ export function RentalPropertyDetailCard() {
 
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-building-lock fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-building-lock fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">Security</div>
@@ -167,7 +167,7 @@ export function RentalPropertyDetailCard() {
               <div id="row2" className="flex py-2 px-1 justify-start">
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-chart-simple fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-chart-simple fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">Status</div>
@@ -177,7 +177,7 @@ export function RentalPropertyDetailCard() {
 
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-fax fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-fax fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">Facing</div>
@@ -187,7 +187,7 @@ export function RentalPropertyDetailCard() {
 
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-couch fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-couch fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">Furnished Area</div>
@@ -199,7 +199,7 @@ export function RentalPropertyDetailCard() {
               <div id="row3" className="flex py-2 px-1 justify-start">
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-car fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-car fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">Car Parking</div>
@@ -209,7 +209,7 @@ export function RentalPropertyDetailCard() {
 
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-user fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-user fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">
@@ -221,7 +221,7 @@ export function RentalPropertyDetailCard() {
 
                 <div className="w-1/3 flex">
                   <div>
-                    <i class="fa-solid fa-building-columns fa-2x mr-2 pt-1"></i>
+                    <i class="fa-solid fa-building-columns fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
                   <div>
                     <div className="text-sm font-semibold">

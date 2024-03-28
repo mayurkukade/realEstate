@@ -1,11 +1,4 @@
-import {
-  Card,
-  Input,
-  Checkbox,
-  Button,
-  Typography,
-  Radio,
-} from "@material-tailwind/react";
+import { Card, Input, Button, Typography } from "@material-tailwind/react";
 
 import Select from "react-select";
 import React, { useState } from "react";
@@ -67,9 +60,9 @@ export function PostPropertyCard() {
           <img className="w-full pt-24" src={image} alt="" />
         </div>
 
-        <div className="pt-[148px] h-[306px] w-[392px] pl-8">
+        <div className="pt-[148px] h-[306px] w-[410px] pl-8">
           <div className="space-y-3">
-            <div className="pb-8 text-start space-y-3">
+            <div className="font-[poppins] pb-8 text-start space-y-3">
               <div className="text-4xl font-semibold space-y-3">
                 Post property Ad to sell or rent online for
               </div>
@@ -106,7 +99,7 @@ export function PostPropertyCard() {
               <Typography
                 variant="h6"
                 color="blue-gray"
-                className="text-2xl font-semibold mb-1 flex flex-initial"
+                className="font-[poppins] text-2xl font-semibold mb-1 flex flex-initial"
               >
                 Let's get you started
               </Typography>
@@ -114,7 +107,7 @@ export function PostPropertyCard() {
               <Typography
                 variant="h6"
                 color="blue-gray"
-                className="text-base font-semibold flex flex-initial"
+                className="font-[lato] text-base font-semibold flex flex-initial"
               >
                 You are:
               </Typography>
@@ -289,12 +282,12 @@ export function PostPropertyCard() {
 
       <div className="mt-12">
         <div className="grid place-content-center">
-          <div className="text-4xl  text-center w-96 font-semibold">
+          <div className="font-[poppins] text-4xl  text-center w-96 font-semibold">
             Post Your Property in 3 Simple Steps
           </div>
         </div>
 
-        <div className="flex justify-evenly mt-6">
+        <div className="font-[lato] flex justify-evenly mt-6">
           <div id="col1" className="w-[350px] ">
             <div className="h-[48px] w-[48px]">
               <img src={PostPropertyIcon1} alt="Icon" />
@@ -336,14 +329,14 @@ export function PostPropertyCard() {
         </div>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 mb-16">
         <div className="grid place-content-center">
-          <div className="text-4xl  text-center w-96 font-semibold">
+          <div className="font-[poppins] text-4xl  text-center w-96 font-semibold">
             How it works
           </div>
         </div>
 
-        <div className="flex justify-evenly mt-6">
+        <div className="font-[lato] flex justify-evenly mt-6">
           <div id="col1" className="w-[350px]">
             <div className="h-[120px] w-[160px]">
               <img src={PostPropertyImage1} alt="Icon" />

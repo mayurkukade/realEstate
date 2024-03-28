@@ -32,7 +32,7 @@ export function PlotForSaleCard({ property }) {
 
         <div
           id="cardBody"
-          className="flex text-gray-800 w-[1024px] border border-cyan-100 rounded-lg shadow-xl"
+          className="font-[lato] flex w-[1024px] border border-cyan-100 rounded-lg shadow-xl"
         >
           <div id="col1" className="w-[330px] p-4 border-cyan-600">
             <div id="image">
@@ -50,13 +50,16 @@ export function PlotForSaleCard({ property }) {
               </div>
 
               <div className="text-start pt-2">Contact: {contact}</div>
-              <div className="text-start pt-12">{location}</div>
+              <div className="text-start pt-12 w-[800px]">{location}</div>
             </div>
           </div>
 
           <div id="col2" className="pl-6">
             <div className="flex pb-6 pt-8">
-              <div id="heading" className="font-semibold text-lg">
+              <div
+                id="heading"
+                className="font-[poppins] font-semibold text-lg"
+              >
                 {title}
               </div>
 
@@ -73,7 +76,7 @@ export function PlotForSaleCard({ property }) {
             >
               <div id="column1" className="py-2 px-1 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-chart-area fa-2x mr-3"></i>
+                  <i class="fa-solid fa-chart-area fa-2x mr-3 mt-1 text-gray-800"></i>
                   <div>
                     <div className="text-sm font-semibold">Plot Area</div>
                     <div className="text-xs">{furnishing}</div>
@@ -81,7 +84,7 @@ export function PlotForSaleCard({ property }) {
                 </div>
 
                 <div className="flex">
-                  <i class="fa-brands fa-slideshare fa-2x mr-3"></i>
+                  <i class="fa-solid fa-expand fa-2x mr-3 mt-1 text-gray-800"></i>
                   <div>
                     <div className="text-sm font-semibold">Open Sides</div>
                     <div className="text-xs">{carpetArea}</div>
@@ -91,7 +94,7 @@ export function PlotForSaleCard({ property }) {
 
               <div id="column2" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-maximize fa-2x mr-3"></i>
+                  <i class="fa-solid fa-maximize fa-2x mr-3 mt-1 text-gray-800"></i>
                   <div>
                     <div className="text-sm font-semibold">Dimension</div>
                     <div className="text-xs">{bathroom}</div>
@@ -99,7 +102,7 @@ export function PlotForSaleCard({ property }) {
                 </div>
 
                 <div className="flex">
-                  <i class="fa-solid fa-stairs fa-2x mr-3"></i>
+                  <i class="fa-solid fa-stairs fa-2x mr-3 mt-1 text-gray-800"></i>
                   <div>
                     <div className="text-sm font-semibold">Floor Allowed</div>
                     <div className="text-xs">{floor}</div>
@@ -109,7 +112,7 @@ export function PlotForSaleCard({ property }) {
 
               <div id="column3" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-user-tie fa-2x mr-3"></i>
+                  <i class="fa-solid fa-user-tie fa-2x mr-3 mt-1 text-gray-800"></i>
                   <div>
                     <div className="text-sm font-semibold">Ownership</div>
                     <div className="text-xs">{parking}</div>
@@ -117,7 +120,7 @@ export function PlotForSaleCard({ property }) {
                 </div>
 
                 <div className="flex">
-                  <i class="fa-solid fa-house-chimney fa-2x mr-3"></i>
+                  <i class="fa-solid fa-house-chimney fa-2x mr-3 mt-1 text-gray-800"></i>
                   <div>
                     <div className="text-sm font-semibold">Transaction</div>
                     <div className="text-xs">{transaction}</div>

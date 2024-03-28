@@ -24,7 +24,7 @@ function App() {
 
       {/* <RentalPropertyPage></RentalPropertyPage> */}
 
-      <RentalPropertyDetailPage></RentalPropertyDetailPage>
+      {/* <RentalPropertyDetailPage></RentalPropertyDetailPage> */}
 
       {/* <NewPropertyPage></NewPropertyPage> */}
 
@@ -34,7 +34,7 @@ function App() {
 
       {/* <PlotForSaleDetailPage></PlotForSaleDetailPage> */}
 
-      {/* <PostPropertyCard></PostPropertyCard> */}
+      <PostPropertyCard></PostPropertyCard>
     </div>
   );
 }

@@ -105,7 +105,7 @@ export function PlotForSaleListing() {
     <div>
       <div
         id="heading"
-        className="text-3xl font-semibold ml-64 mt-4 text-gray-800"
+        className="font-[poppins] text-3xl font-semibold ml-64 mt-4 "
       >
         Plots for Sale in Pune
       </div>

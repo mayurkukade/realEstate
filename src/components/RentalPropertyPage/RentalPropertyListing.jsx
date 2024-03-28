@@ -15,7 +15,7 @@ export function RentalPropertyListing() {
       price: "INR.16,000",
       contact: "7028003275",
       location: "1.5km from Konark Virtue",
-      title: "2 BHK Apartments for Sale in Konark Virtue, Keshav Nagar, Pune",
+      title: "2 BHK Apartments for Sale in Konark Virtue, Pune",
       furnishing: "Unfurnished",
       carpetArea: "792 sqft",
       bathroom: 2,
@@ -105,7 +105,7 @@ export function RentalPropertyListing() {
     <div>
       <div
         id="heading"
-        className="text-3xl font-semibold ml-64 mt-4 text-gray-800"
+        className="font-[poppins] text-3xl font-semibold ml-64 mt-4"
       >
         Owner Properties for Rent in Pune
       </div>

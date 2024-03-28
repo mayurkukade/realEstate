@@ -105,7 +105,7 @@ export function NewPropertyListing() {
     <div>
       <div
         id="heading"
-        className="text-3xl font-semibold ml-64 mt-4 text-gray-800"
+        className="font-[poppins] text-3xl font-semibold ml-64 mt-4"
       >
         New Properties for Sale in Pune
       </div>

@@ -10,7 +10,10 @@ export function PropertyServicesCard() {
   return (
     <div className="grid place-content-center">
       <div className="m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl">
-        <div id="heading" className="text-2xl font-semibold mb-5">
+        <div
+          id="heading"
+          className="font-[poppins] text-2xl font-semibold mb-5"
+        >
           Property Services
         </div>
 
@@ -21,7 +24,11 @@ export function PropertyServicesCard() {
                 <img src={PropertyServicesCardImg} alt="card-image" />
               </CardHeader>
               <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-1">
+                <Typography
+                  variant="h5"
+                  color="blue-gray"
+                  className="font-[poppins] mb-1"
+                >
                   Home Loans
                 </Typography>
                 <Typography className="">
@@ -37,7 +44,11 @@ export function PropertyServicesCard() {
                 <img src={PropertyServicesCardImg} alt="card-image" />
               </CardHeader>
               <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-1">
+                <Typography
+                  variant="h5"
+                  color="blue-gray"
+                  className="font-[poppins] mb-1"
+                >
                   Legal Services
                 </Typography>
                 <Typography className="">
@@ -53,7 +64,11 @@ export function PropertyServicesCard() {
                 <img src={PropertyServicesCardImg} alt="card-image" />
               </CardHeader>
               <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-1">
+                <Typography
+                  variant="h5"
+                  color="blue-gray"
+                  className="font-[poppins] mb-1"
+                >
                   Vastu
                 </Typography>
                 <Typography className="">

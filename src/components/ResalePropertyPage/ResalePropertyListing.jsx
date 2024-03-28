@@ -1,12 +1,12 @@
 import React from "react";
-import { SalePropertyCard } from "./SalePropertyCard";
+import { ResalePropertyCard } from "./ResalePropertyCard";
 import propertyImage1 from "../../assets/images/propertyImage1.jpg";
 import propertyImage2 from "../../assets/images/propertyImage2.jpg";
 import propertyImage3 from "../../assets/images/propertyImage3.jpg";
 import propertyImage4 from "../../assets/images/propertyImage4.jpg";
 import propertyImage5 from "../../assets/images/propertyImage5.jpg";
 
-export function PropertyListing() {
+export function ResalePropertyListing() {
   // Sample property data array
   const propertyData = [
     {
@@ -15,7 +15,7 @@ export function PropertyListing() {
       price: "INR.55 lakh",
       contact: "9028003579",
       location: "4.5km from Katraj",
-      title: "2 BHK Apartments for Sale in Windsor County, Ambegaon Pune",
+      title: "2 BHK Apartments for Sale in Windsor County, Ambegaon",
       furnishing: "Furnished",
       carpetArea: "732 sqft",
       bathroom: 1,
@@ -105,13 +105,13 @@ export function PropertyListing() {
     <div>
       <div
         id="heading"
-        className="text-3xl font-semibold ml-64 mt-4 text-gray-800"
+        className="font-[poppins] text-3xl font-semibold ml-64 mt-4 "
       >
         Owner Properties for Resale in Pune
       </div>
 
       {propertyData.map((property) => (
-        <SalePropertyCard key={property.id} property={property} />
+        <ResalePropertyCard key={property.id} property={property} />
       ))}
     </div>
   );

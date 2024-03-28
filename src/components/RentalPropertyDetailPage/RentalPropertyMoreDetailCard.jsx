@@ -5,9 +5,9 @@ export function RentalPropertyMoreDetailCard() {
     <div className="grid place-content-center">
       <div
         id="cardBody"
-        className="m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl"
+        className="font-[lato] m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl"
       >
-        <div className="mb-4">More Details</div>
+        <div id="heading" className="font-[poppins] font-semibold text-xl mb-4">More Details</div>
 
         <div className="flex space-x-8">
           <div id="col1">
