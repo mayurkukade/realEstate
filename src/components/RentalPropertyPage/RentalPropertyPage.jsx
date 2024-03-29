@@ -1,12 +1,10 @@
+import { PropertyPageNavbar } from "../PropertyPageNavbar";
 import { RentalPropertyListing } from "./RentalPropertyListing";
-import { RentalPropertyNavbar } from "./RentalPropertyNavbar";
-
-
 
 export default function RentalPropertyPage() {
   return (
     <div>
-      <RentalPropertyNavbar></RentalPropertyNavbar>
+      <PropertyPageNavbar></PropertyPageNavbar>
       <RentalPropertyListing></RentalPropertyListing>
     </div>
   );

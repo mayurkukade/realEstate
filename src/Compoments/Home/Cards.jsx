@@ -8,6 +8,7 @@ import {
     Typography,
     Button,
   } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 export default function Cards({image}) {
   return (
@@ -31,7 +32,9 @@ export default function Cards({image}) {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
+        <Link to="/rentalpropertydetail">
         <Button className='bg-green-500'>View</Button>
+        </Link>
       </CardFooter>
     </Card>
     </div>

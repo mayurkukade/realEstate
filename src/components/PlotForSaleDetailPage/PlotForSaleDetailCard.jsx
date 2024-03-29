@@ -1,11 +1,11 @@
 import { React, useState } from "react";
 
-import Image1 from "../assets/images/Image1.jpg";
-import Image2 from "../assets/images/Image2.jpg";
-import Image3 from "../assets/images/Image3.jpg";
-import Image4 from "../assets/images/Image4.jpg";
+import PlotForSaleImage1 from "../../assets/images/PlotForSaleImage1.jpeg";
+import PlotForSaleImage2 from "../../assets/images/PlotForSaleImage1.jpeg";
+import PlotForSaleImage3 from "../../assets/images/PlotForSaleImage3.jpeg";
+import PlotForSaleImage4 from "../../assets/images/PlotForSaleImage1.jpeg";
 
-export function SalePropertyCardTwo() {
+export function PlotForSaleDetailCard() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
 
@@ -17,24 +17,24 @@ export function SalePropertyCardTwo() {
   const closeModal = () => {
     setModalOpen(false);
   };
-  const imageSources = [Image2, Image3];
+  const imageSources = [PlotForSaleImage2, PlotForSaleImage3];
 
   return (
     <div className="grid place-content-center">
       <div
         id="cardHeading"
-        className="m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl "
+        className="font-[lato] m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl  text-lg"
       >
-        <div id="heading" className="pt-2">
+        <div id="heading" className="font-[poppins] pt-2">
           <div id="line1" className="flex my-1">
             <div>₹ 90.0 Lac</div>
             <div className="px-4">EMI- ₹ 41k</div>
-            <span className="leading-5 text-lg">|</span>
+            <span className="leading-5 text-lg pt-1">|</span>
 
             <div className=" flex justify-evenly">
               <div className="px-4">How much loan can I get?</div>
 
-              <div id="icon" className="pl-85 ml-[600px] text-lg">
+              <div id="icon" className="pl- ml-[540px] text-lg">
                 <div>
                   <link
                     rel="stylesheet"
@@ -61,9 +61,9 @@ export function SalePropertyCardTwo() {
             <div className="w-80 h-auto overflow-hidden rounded-lg bg-clip-padding ">
               <div className="w-full h-44 rounded-t-lg rounded-b-none bg-clip-padding">
                 <img
-                  onClick={() => openModal(Image1)}
+                  onClick={() => openModal(PlotForSaleImage1)}
                   className="w-full h-full object-cover hover:cursor-pointer"
-                  src={Image1}
+                  src={PlotForSaleImage1}
                   alt="building1"
                 />
               </div>
@@ -83,9 +83,9 @@ export function SalePropertyCardTwo() {
                   </li>
                 ))}
                 <img
-                  onClick={() => openModal(Image4)}
+                  onClick={() => openModal(PlotForSaleImage4)}
                   className="w-1/3 object-cover hover:cursor-pointer h-20 relative list-none m-0 p-0 overflow-hidden"
-                  src={Image4}
+                  src={PlotForSaleImage4}
                   alt="building4"
                 />
               </ul>
@@ -107,22 +107,20 @@ export function SalePropertyCardTwo() {
             )}
           </div>
 
-          <div id="information" className="pl-6 mt-4 text-sm text-gray-900 ">
+          <div id="information" className="pl-6 mt-4 text-sm  ">
             <div
               id="iconInformation"
               className="flex gap-6 p-3 bg-gray-200 rounded-lg w-fit"
             >
               <div className="">
-                <i class="fa-solid fa-bed fa-lg p-1"></i>1 Bed
+                <i class="fa-solid fa-torii-gate fa-lg p-1"></i>Gated Colony
               </div>
               <div>
-                <i class="fa-solid fa-bath fa-lg p-1"></i>1 Bath
+                <i class="fa-regular fa-calendar-check fa-lg p-1"></i>PMRDA
+                Approved
               </div>
               <div>
-                <i class="fa-solid fa-hotel fa-lg p-1"></i>2 Balconies
-              </div>
-              <div>
-                <i class="fa-solid fa-car fa-lg p-1"></i>1 Covered Parking
+                <i class="fa-solid fa-clone fa-lg p-1"></i>Corner Plot
               </div>
             </div>
 
@@ -131,59 +129,104 @@ export function SalePropertyCardTwo() {
               className="w-[550px] h-[200px] mt-8 text-start  border-cyan-600"
             >
               <div id="row1" className="flex py-2 px-1 justify-start">
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">
-                    Super Built-Up Area
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-regular fa-building fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
-                  <div className="text-sm">text</div>
+                  <div>
+                    <div className="text-sm font-semibold">Plot Area</div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
 
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">Floor</div>
-                  <div className="text-sm">text</div>
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-maximize fa-2x mr-2 pt-1 text-gray-800"></i>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold">Dimension (LxB)</div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
 
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">Transaction Type</div>
-                  <div className="text-sm">text</div>
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-house-chimney fa-2x mr-2 pt-1 text-gray-800"></i>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold">
+                      Transaction Type
+                    </div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
               </div>
 
               <div id="row2" className="flex py-2 px-1 justify-start">
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">Status</div>
-                  <div className="text-sm">text</div>
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-chart-simple fa-2x mr-2 pt-1 text-gray-800"></i>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold">Status</div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
 
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">Facing</div>
-                  <div className="text-sm">text</div>
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-fax fa-2x mr-2 pt-1 text-gray-800"></i>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold">Facing</div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
 
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">Furnished Area</div>
-                  <div className="text-sm">text</div>
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-trowel-bricks fa-2x mr-2 pt-1 text-gray-800"></i>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold">
+                      Any Construction
+                    </div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
               </div>
 
               <div id="row3" className="flex py-2 px-1 justify-start">
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">Car Parking</div>
-                  <div className="text-sm">text</div>
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-car fa-2x mr-2 pt-1 text-gray-800"></i>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold">Overlooking</div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
 
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">
-                    Type of Ownershipr
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-user fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
-                  <div className="text-sm">text</div>
+                  <div>
+                    <div className="text-sm font-semibold">
+                      Type of Ownership
+                    </div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
 
-                <div className="w-1/3">
-                  <div className="text-sm font-semibold">
-                    Age of Construction
+                <div className="w-1/3 flex">
+                  <div>
+                    <i class="fa-solid fa-border-all fa-2x mr-2 pt-1 text-gray-800"></i>
                   </div>
-                  <div className="text-sm">text</div>
+                  <div>
+                    <div className="text-sm font-semibold">Boundry Wall</div>
+                    <div className="text-sm">text</div>
+                  </div>
                 </div>
               </div>
             </div>

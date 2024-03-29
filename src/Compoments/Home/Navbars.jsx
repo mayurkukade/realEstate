@@ -28,9 +28,9 @@ export default function Navbars() {
           color="blue-gray"
           className="p-1 font-normal"
         >
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             Homes
-          </a>
+          </Link>
         </Typography>
         <Typography
           as="li"
@@ -38,11 +38,11 @@ export default function Navbars() {
           color="blue-gray"
           className="p-1 font-normal"
         >
-          <a href="#" className="flex items-center">
+          <Link to="/postproprite" className="flex items-center">
             Listing
-          </a>
+          </Link>
         </Typography>
-        <Typography
+        {/* <Typography
           as="li"
           variant="small"
           color="blue-gray"
@@ -51,7 +51,7 @@ export default function Navbars() {
           <a href="#" className="flex items-center">
             Proprites
           </a>
-        </Typography>
+        </Typography> */}
         <Typography
           as="li"
           variant="small"

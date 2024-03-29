@@ -1,5 +1,6 @@
 import React from "react";
-import { NavbarSalePropertyCard } from "./NavbarSalePropertyCard";
+import { Link } from "react-router-dom";
+//import { NavbarSalePropertyCard } from "../components/NavbarSalePropertyCard";
 
 export function RentalPropertyCard({ property }) {
   const {
@@ -20,6 +21,7 @@ export function RentalPropertyCard({ property }) {
 
   return (
     <div className="grid place-content-center my-4">
+      <Link to="/rentalpropertydetail">
       <div>
         <link
           rel="stylesheet"
@@ -134,6 +136,8 @@ export function RentalPropertyCard({ property }) {
           </div>
         </div>
       </div>
+
+      </Link>
     </div>
   );
 }

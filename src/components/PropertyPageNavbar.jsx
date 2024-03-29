@@ -1,6 +1,6 @@
 import { Navbar, Button, Input } from "@material-tailwind/react";
 
-export function NavbarSalePropertyCard() {
+export function PropertyPageNavbar() {
   return (
     <div className="mt-5">
       <div>
@@ -53,6 +53,7 @@ export function NavbarSalePropertyCard() {
           Sort by: Relevance
         </button>
       </div>
+
     </div>
   );
 }

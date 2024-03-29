@@ -1,14 +1,12 @@
 import React from "react";
 import { RentalPropertyCard } from "./RentalPropertyCard";
-import propertyImage6 from "../assets/images/propertyImage6.jpg";
-import propertyImage7 from "../assets/images/propertyImage7.jpg";
-import propertyImage8 from "../assets/images/propertyImage8.jpg";
-import propertyImage9 from "../assets/images/propertyImage9.jpg";
-import propertyImage10 from "../assets/images/propertyImage10.jpg";
+import propertyImage6 from "../../assets/images/propertyImage6.jpg";
+import propertyImage7 from "../../assets/images/propertyImage7.jpg";
+import propertyImage8 from "../../assets/images/propertyImage8.jpg";
+import propertyImage9 from "../../assets/images/propertyImage9.jpg";
+import propertyImage10 from "../../assets/images/propertyImage10.jpg";
 
 export function RentalPropertyListing() {
-
-
   // Sample property data array
   const propertyData = [
     {
@@ -17,7 +15,7 @@ export function RentalPropertyListing() {
       price: "INR.16,000",
       contact: "7028003275",
       location: "1.5km from Konark Virtue",
-      title: "2 BHK Apartments for Sale in Konark Virtue, Keshav Nagar, Pune",
+      title: "2 BHK Apartments for Sale in Konark Virtue, Pune",
       furnishing: "Unfurnished",
       carpetArea: "792 sqft",
       bathroom: 2,
@@ -105,6 +103,13 @@ export function RentalPropertyListing() {
 
   return (
     <div>
+      <div
+        id="heading"
+        className="font-[poppins] text-3xl font-semibold ml-64 mt-4"
+      >
+        Owner Properties for Rent in Pune
+      </div>
+
       {propertyData.map((property) => (
         <RentalPropertyCard key={property.id} property={property} />
       ))}

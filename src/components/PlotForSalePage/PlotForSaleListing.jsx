@@ -1,10 +1,10 @@
 import React from "react";
 import { PlotForSaleCard } from "./PlotForSaleCard";
-import propertyImage16 from "../assets/images/propertyImage16.jpg";
-import propertyImage17 from "../assets/images/propertyImage17.jpg";
-import propertyImage18 from "../assets/images/propertyImage18.jpg";
-import propertyImage19 from "../assets/images/propertyImage19.jpg";
-import propertyImage20 from "../assets/images/propertyImage20.jpg";
+import propertyImage16 from "../../assets/images/propertyImage16.jpg";
+import propertyImage17 from "../../assets/images/propertyImage17.jpg";
+import propertyImage18 from "../../assets/images/propertyImage18.jpg";
+import propertyImage19 from "../../assets/images/propertyImage19.jpg";
+import propertyImage20 from "../../assets/images/propertyImage20.jpg";
 
 export function PlotForSaleListing() {
   // Sample property data array
@@ -103,6 +103,13 @@ export function PlotForSaleListing() {
 
   return (
     <div>
+      <div
+        id="heading"
+        className="font-[poppins] text-3xl font-semibold ml-64 mt-4 "
+      >
+        Plots for Sale in Pune
+      </div>
+
       {propertyData.map((property) => (
         <PlotForSaleCard key={property.id} property={property} />
       ))}

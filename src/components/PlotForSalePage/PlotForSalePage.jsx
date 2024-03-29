@@ -1,11 +1,13 @@
 import { Navbar, Button, Input } from "@material-tailwind/react";
+
+import { PropertyPageNavbar } from "../PropertyPageNavbar";
 import { PlotForSaleListing } from "./PlotForSaleListing";
-import { PlotForSaleNavbar } from "./PlotForSaleNavbar";
+
 
 export default function PlotForSalePage() {
   return (
     <div>
-      <PlotForSaleNavbar></PlotForSaleNavbar>
+      <PropertyPageNavbar></PropertyPageNavbar>
       <PlotForSaleListing></PlotForSaleListing>
     </div>
   );

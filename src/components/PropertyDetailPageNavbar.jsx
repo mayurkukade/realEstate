@@ -1,6 +1,6 @@
 import { Navbar, Button, Input } from "@material-tailwind/react";
 
-export function NavbarBlue() {
+export function PropertyDetailPageNavbar() {
   return (
     <div>
       <div>

@@ -8,11 +8,11 @@ import {
 import Image1 from "../assets/images/Image1.jpg";
 import Image2 from "../assets/images/Image2.jpg";
 
-export function HorizontalCard() {
+export  function PreViewPropertyCard() {
   return (
-    <div className="grid place-content-center">
+    <div className="font-[lato] grid place-content-center">
       <div className=" m-4 p-6 w-[1100px] border rounded-lg border-cyan-100 shadow-xl">
-        <div className="text-2xl font-semibold mb-5">
+        <div className="font-[poppins] text-2xl font-semibold mb-5">
           Previously Viewed Properties
         </div>
 
@@ -33,23 +33,30 @@ export function HorizontalCard() {
               />
             </CardHeader>
             <CardBody>
-              <Typography variant="h6" color="gray" className="mb-2 uppercase">
+              <Typography
+                variant="h6"
+                color="gray"
+                className="font-[poppins] mb-2 uppercase"
+              >
                 1 BHK House
               </Typography>
               <Typography
                 variant="h4"
                 color="blue-gray"
-                className="text-xl mb-2"
+                className="font-[poppins] text-xl mb-2"
               >
                 ₹ 90.0 Lac | 707 sqft
               </Typography>
-              <Typography color="gray" className="mb-3 font-normal">
+              <Typography
+                color="gray"
+                className="font-[lato] text-black mb-3 font-normal "
+              >
                 Green Hills Apartment Wagholi, Pune
               </Typography>
               <a href="#" className="inline-block">
                 <Button
                   variant="text"
-                  className="flex items-center gap-2 text-red-700"
+                  className="font-[lato] flex items-center gap-2 text-red-700"
                 >
                   Contact Owner
                   <svg
@@ -87,23 +94,30 @@ export function HorizontalCard() {
               />
             </CardHeader>
             <CardBody>
-              <Typography variant="h6" color="gray" className="mb-2 uppercase">
+              <Typography
+                variant="h6"
+                color="gray"
+                className="font-[poppins] mb-2 uppercase"
+              >
                 1 BHK House
               </Typography>
               <Typography
                 variant="h4"
                 color="blue-gray"
-                className="text-xl mb-2"
+                className="font-[poppins] text-xl mb-2"
               >
                 ₹ 90.0 Lac | 707 sqft
               </Typography>
-              <Typography color="gray" className="mb-3 font-normal">
+              <Typography
+                color="gray"
+                className="font-[lato] text-black mb-3 font-normal"
+              >
                 Green Hills Apartment Wagholi, Pune
               </Typography>
               <a href="#" className="inline-block">
                 <Button
                   variant="text"
-                  className="flex items-center gap-2 text-red-700"
+                  className="font-[lato] flex items-center gap-2 text-red-700"
                 >
                   Contact Owner
                   <svg

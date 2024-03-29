@@ -1,10 +1,10 @@
 import React from "react";
 import { NewPropertyCard } from "./NewPropertyCard";
-import propertyImage11 from "../assets/images/propertyImage11.jpg";
-import propertyImage12 from "../assets/images/propertyImage12.jpg";
-import propertyImage13 from "../assets/images/propertyImage13.jpg";
-import propertyImage14 from "../assets/images/propertyImage14.jpg";
-import propertyImage15 from "../assets/images/propertyImage15.jpg";
+import propertyImage11 from "../../assets/images/propertyImage11.jpg";
+import propertyImage12 from "../../assets/images/propertyImage12.jpg";
+import propertyImage13 from "../../assets/images/propertyImage13.jpg";
+import propertyImage14 from "../../assets/images/propertyImage14.jpg";
+import propertyImage15 from "../../assets/images/propertyImage15.jpg";
 
 export function NewPropertyListing() {
   // Sample property data array
@@ -103,6 +103,13 @@ export function NewPropertyListing() {
 
   return (
     <div>
+      <div
+        id="heading"
+        className="font-[poppins] text-3xl font-semibold ml-64 mt-4"
+      >
+        New Properties for Sale in Pune
+      </div>
+
       {propertyData.map((property) => (
         <NewPropertyCard key={property.id} property={property} />
       ))}

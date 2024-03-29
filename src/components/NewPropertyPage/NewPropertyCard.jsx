@@ -1,8 +1,7 @@
 import React from "react";
-import {NavbarSalePropertyCard} from "./NavbarSalePropertyCard"
+import { Link } from "react-router-dom";
 
-
-export function SalePropertyCard({ property }) {
+export function NewPropertyCard({ property }) {
   const {
     owner,
     price,
@@ -21,7 +20,7 @@ export function SalePropertyCard({ property }) {
 
   return (
     <div className="grid place-content-center my-4">
-      
+      <Link to="/newpropertydetail">
       <div>
         <link
           rel="stylesheet"
@@ -34,7 +33,7 @@ export function SalePropertyCard({ property }) {
 
       <div
         id="cardBody"
-        className="flex text-gray-800 w-[1024px] border border-cyan-100 rounded-lg shadow-xl"
+        className="font-[lato] flex w-[1024px] border border-cyan-100 rounded-lg shadow-xl"
       >
         <div id="col1" className="w-[330px] p-4 border-cyan-600">
           <div id="image">
@@ -52,13 +51,13 @@ export function SalePropertyCard({ property }) {
             </div>
 
             <div className="text-start pt-2">Contact: {contact}</div>
-            <div className="text-start pt-12">{location}</div>
+            <div className="text-start pt-12 w-[800px]">{location}</div>
           </div>
         </div>
 
         <div id="col2" className="pl-6">
           <div className="flex pb-6 pt-8">
-            <div id="heading" className="font-semibold text-lg">
+            <div id="heading" className="font-[poppins] font-semibold text-lg">
               {title}
             </div>
 
@@ -75,7 +74,7 @@ export function SalePropertyCard({ property }) {
           >
             <div id="column1" className="py-2 px-1 justify-evenly space-y-4">
               <div className="flex">
-                <i class="fa-solid fa-couch fa-2x mr-3"></i>
+                <i class="fa-solid fa-couch fa-2x mr-3 mt-1 text-gray-800"></i>
                 <div>
                   <div className="text-sm font-semibold">Furnishing</div>
                   <div className="text-xs">{furnishing}</div>
@@ -83,7 +82,7 @@ export function SalePropertyCard({ property }) {
               </div>
 
               <div className="flex">
-                <i class="fa-solid fa-chart-area fa-2x mr-3"></i>
+                <i class="fa-solid fa-chart-area fa-2x mr-3 mt-1 text-gray-800"></i>
                 <div>
                   <div className="text-sm font-semibold">Carpet Area</div>
                   <div className="text-xs">{carpetArea}</div>
@@ -93,7 +92,7 @@ export function SalePropertyCard({ property }) {
 
             <div id="column2" className="p-2 justify-evenly space-y-4">
               <div className="flex">
-                <i class="fa-solid fa-bath fa-2x mr-3"></i>
+                <i class="fa-solid fa-bath fa-2x mr-3 mt-1 text-gray-800"></i>
                 <div>
                   <div className="text-sm font-semibold">Bathroom</div>
                   <div className="text-xs">{bathroom}</div>
@@ -101,7 +100,7 @@ export function SalePropertyCard({ property }) {
               </div>
 
               <div className="flex">
-                <i class="fa-solid fa-stairs fa-2x mr-3"></i>
+                <i class="fa-solid fa-stairs fa-2x mr-3 mt-1 text-gray-800"></i>
                 <div>
                   <div className="text-sm font-semibold">Floor</div>
                   <div className="text-xs">{floor}</div>
@@ -111,7 +110,7 @@ export function SalePropertyCard({ property }) {
 
             <div id="column3" className="p-2 justify-evenly space-y-4">
               <div className="flex">
-                <i class="fa-solid fa-car fa-2x mr-3"></i>
+                <i class="fa-solid fa-car fa-2x mr-3 mt-1 text-gray-800"></i>
                 <div>
                   <div className="text-sm font-semibold">Parking</div>
                   <div className="text-xs">{parking}</div>
@@ -119,7 +118,7 @@ export function SalePropertyCard({ property }) {
               </div>
 
               <div className="flex">
-                <i class="fa-solid fa-house-chimney fa-2x mr-3"></i>
+                <i class="fa-solid fa-house-chimney fa-2x mr-3 mt-1 text-gray-800"></i>
                 <div>
                   <div className="text-sm font-semibold">Transaction</div>
                   <div className="text-xs">{transaction}</div>
@@ -134,6 +133,8 @@ export function SalePropertyCard({ property }) {
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 }
+
