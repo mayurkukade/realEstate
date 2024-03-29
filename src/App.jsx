@@ -5,7 +5,7 @@ import SingUp from "./Compoments/SingUp";
 import Applayout from "./Compoments/Layout/Applayout";
 import About from './Component/About';
 import Services from './Component/Services';
-//import SellRentCard from './Component/SellRentCard';
+import SellRentCard from './Component/SellRentCard';
 import ACService from './Component/ACService';
 import PlumbingService from './Component/PlumbingService';
 import PaintingService from './Component/PaintingService';
@@ -79,6 +79,7 @@ function App() {
           <Route path="/plotforsale" element={<PlotForSalePage />} />
           <Route path="/plotforsaledetails" element={<PlotForSaleDetailPage />} />
           <Route path="/postproprite" element={<PostPropertyCard />} />
+          <Route path="/sellrentcard" element={<SellRentCard/>} />
           <Route path="/*" element={<Error_Page/>} />
 
         </Route>

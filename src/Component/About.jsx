@@ -31,16 +31,16 @@ function About() {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
   return (
-    <div className="w-full md:w-full h-full mt-10">
+    <div className="w-full md:w-full h-full ">
       <div id='header'>
-        <div className="relative max-h-[350px] overflow-hidden flex justify-center items-center h-[250px]">
+        <div className=" relative max-h-[350px] overflow-hidden flex justify-center items-center h-[250px]">
           <img
             src={aboutbg}
             alt="about"
             className="w-full h-full absolute object-cover align-middle overflow-clip "
           />
           <div className="relative">
-            <h1 className="text-[#fff] text-6xl font-bold text-center ">
+            <h1 className="text-[#fff] text-6xl font-[Lato] font-bold text-center ">
               ABOUT US
             </h1>
           </div>
@@ -50,12 +50,12 @@ function About() {
         <div className=" md:w-auto flex flex-wrap flex-row justify-center px-20">
           <div className="py-[40px] flex flex-col text-center">
             <div>
-              <h2 className="text-xl text-[#353535] py-2 font-semibold">
+              <h2 className="text-xl text-[#353535] py-2 font-[Poppins]  font-semibold">
                 A REAL ESTATE SOLUTIONS COMPANY
               </h2>
             </div>
             <div>
-              <h1 className="text-[34px] md:text-[58px] text-[#353535]">
+              <h1 className="text-[34px] md:text-[58px] font-[Poppins] text-[#353535]">
                 TRUE HOMES PROPERTY GROUP, LLC
               </h1>
             </div>
@@ -66,22 +66,22 @@ function About() {
       <div id="aboutUs" className="w-full">
         <div className="flex flex-wrap flex-row px-20 w-full gap-5 pt-8 pb-8  bg-[rgba(238,238,238,0.66)]">
           <div className="w-[350px] md-w-1/3 md:float-left">
-            <h1 className="text-2xl text-[#353535] font-semibold pb-3">
+            <h1 className="text-2xl text-[#353535] font-[Poppins] font-semibold pb-3">
               OUR FAVORITE QUOTE
             </h1>
-            <p className="text-base text-[#353535] pb-2">
+            <p className="text-base font-[Lato]  text-[#353535] pb-2">
               "To give real service you must add something which cannot be
               bought or measured with money, and that is sincerity and
               integrity."
             </p>
-            <span className="text-lg font-semibold text-[#DDB55D] ">
+            <span className="text-lg font-semibold font-[Lato] text-[#DDB55D] ">
               -Douglas Adams-
               <p className="text-sm text-[#DDB55D]">Author</p>
             </span>
           </div>
           <div className="float-right w-[740px] text-[#353535]">
-            <h1 className="text-2xl font-semibold">ABOUT US</h1>
-            <div className="pb-2 pt-2 text-base">
+            <h1 className="text-2xl font-semibold font-[Poppins]">ABOUT US</h1>
+            <div className="pb-2 pt-2 text-base font-[Lato]">
               <span>
                 Real Estate Property Group is a professional, full service real
                 estate solutions firm that buys and sells properties throughout
@@ -90,7 +90,7 @@ function About() {
                 buyers and landlords.
               </span>
             </div>
-            <div className="text-base">
+            <div className="text-base font-[Lato] ">
               <span>
                 At Real Estate, our team is highly motivated, knowledgeable,
                 ethical and resourceful. Qualified to handle any real estate
@@ -108,13 +108,13 @@ function About() {
 
       <div className="px-20 text-center py-8 ">
         <div className="pb-4">
-          <h1 className="md:text-[58px] text-[34px] text-[rgb(53,53,53)]">
+          <h1 className="md:text-[58px] text-[34px] font-[Poppins] text-[rgb(53,53,53)]">
             OUR APPROACH
           </h1>
         </div>
 
         <div className="flex justify-center">
-          <span className="text-base text-[#353535] md:w-[600px]">
+          <span className="text-base text-[#353535] font-[Lato] md:w-[600px]">
             At Real Estate, it's our goal to not only have a positive effect on
             ourselves and our families - but also to inspire, motivate, and
             create lasting change in everyone we encounter
@@ -125,27 +125,27 @@ function About() {
       <div className="relative py-4">
         <div className=" md:flex flex-row px-20 justify-center gap-8 text-center overflow-clip bg-gray-100 text-[#353535] relative p-10">
           <div className="md:w-1/3  ">
-            <h1 className="text-[24px] pb-7 md:pb-8 font-semibold">
+            <h1 className="text-[24px] pb-7 font-[Poppins] md:pb-8 font-semibold">
               COMMUNITY REJUVENATION
             </h1>
-            <p className="text-base pb-7 md:pb-4 font-medium">
+            <p className="text-base pb-7 md:pb-4 font-medium font-[Lato]">
               We aim to rejuvenate neighborhoods and increase the standard of
               living by improving the overall quality of housing for the
               residents
             </p>
           </div>
           <div className="md:w-1/3 ">
-            <h1 className="text-[24px] pb-4 md:pb-2 font-semibold ">
+            <h1 className="text-[24px] pb-4 md:pb-2 font-[Poppins] font-semibold ">
               SOLUTIONS & SYSTEMS ORIENTED
             </h1>
-            <p className="text-base pb-7 md:pb-4 font-medium">
+            <p className="text-base pb-7 md:pb-4 font-medium font-[Lato]">
               Our core business lies within our systems, education and knowledge
               of the real estate industry
             </p>
           </div>
           <div className="md:w-1/3">
-            <h1 className="text-[24px] pb-7 md:pb-8 font-semibold">TEAM APPROACH</h1>
-            <p className="text-base font-medium">
+            <h1 className="text-[24px] pb-7 md:pb-8 font-semibold font-[Poppins]">TEAM APPROACH</h1>
+            <p className="text-base font-medium font-[Lato]">
               We have an aggressive team approach, and a top-notch ability to
               expand our client base through our knowledge of deal structuring
               and advanced real estate techniques
@@ -156,12 +156,12 @@ function About() {
 
       <div className="px-20 text-center py-10 ">
         <div className="pb-4">
-          <h1 className="text-2xl font-serif text-[rgb(53,53,53)] font-semibold">
+          <h1 className="text-2xl text-[rgb(53,53,53)] font-[Poppins] font-semibold">
             WHY CHOOSE US
           </h1>
         </div>
         <div className="flex justify-center">
-          <span className="text-base font-playfair text-[#353535] md:w-[800px] pb-6">
+          <span className="text-base text-[#353535] font-[Lato] md:w-[800px] pb-6">
             Real Estate is committed to rejuvenating Space Coast communities
             through our systematic and disciplined approach, and creating
             lasting change in every neighborhood we encounter.
@@ -178,7 +178,7 @@ function About() {
             (item, index) =>
               index === current && (
                 <div key={index}>
-                  <h1 className="pb-6 text-4xl flex justify-center">
+                  <h1 className="pb-6 text-4xl flex font-[Poppins] justify-center">
                     Testimonials
                   </h1>
                   <div>
@@ -236,19 +236,19 @@ function About() {
           <h1 className="text-[24px] pb-5 ">
             <i class="fa-solid fa-envelope"></i>
           </h1>
-          <p className="text-base pb-4">Ben.Bazemore@ RealEstate.com</p>
+          <p className="text-base pb-4 font-[Lato]">Ben.Bazemore@ RealEstate.com</p>
         </div>
         <div className="md:w-1/3 pb-5">
           <h1 className="text-[24px] pb-4 ">
             <i class="fa-solid fa-phone"></i>
           </h1>
-          <p className="text-base pb-4">321.323.9507</p>
+          <p className="text-base pb-4 font-[Lato]">321.323.9507</p>
         </div>
         <div className="md:w-1/3">
           <h1 className="text-[24px] pb-4">
             <i class="fa-solid fa-location-dot"></i>
           </h1>
-          <p className="text-base">PO Box 140398, Melbourne, FL 32940</p>
+          <p className="text-base font-[Lato]">PO Box 140398, Melbourne, FL 32940</p>
         </div>
       </div>
     </div>

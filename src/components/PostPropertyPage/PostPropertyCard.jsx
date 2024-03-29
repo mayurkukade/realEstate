@@ -11,6 +11,7 @@ import PostPropertyIcon3 from "../../assets/images/PostPropertyIcon3.png";
 import PostPropertyImage1 from "../../assets/images/PostPropertyImage1.png";
 import PostPropertyImage2 from "../../assets/images/PostPropertyImage2.png";
 import PostPropertyImage3 from "../../assets/images/PostPropertyImage3.png";
+import { Link } from "react-router-dom";
 
 const countryCodes = [
   { label: "+1 (USA)", value: "+1" },
@@ -273,10 +274,11 @@ export default function PostPropertyCard() {
                 WhatsApp No. to get enquiries from Buyer / Tenant
               </div>
             </div>
-
+              <Link to="/sellrentcard">
             <Button className="mt-6 bg-red-700 text-sm rounded-full" fullWidth>
               Start Now
             </Button>
+            </Link>
           </form>
         </Card>
       </div>
