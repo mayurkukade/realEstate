@@ -1,4 +1,14 @@
 import React from "react";
+import { FaRegHeart, FaShare } from "react-icons/fa";
+import {
+  FaEllipsisVertical,
+  FaCouch,
+  FaChartArea,
+  FaBath,
+  FaCar,
+  FaUserShield,
+} from "react-icons/fa6";
+import { GiStairs } from "react-icons/gi";
 
 export function RentalPropertyCard({ property }) {
   const {
@@ -19,22 +29,12 @@ export function RentalPropertyCard({ property }) {
 
   return (
     <div className="grid place-content-center my-4 ">
-      <div>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
-      </div>
-
       <div
         id="cardBody"
-        className="font-[lato] w-[1024px] border border-cyan-100 rounded-lg shadow-xl"
+        className="font-[lato] w-[1024px] border border-cyan-100 rounded-lg shadow-xl p-4"
       >
         <div className="flex">
-          <div id="col1" className="w-[330px] p-4 border-cyan-600">
+          <div id="col1" className="w-[330px] border-cyan-600">
             <div id="image">
               <img
                 src={image}
@@ -54,16 +54,29 @@ export function RentalPropertyCard({ property }) {
             </div>
           </div>
 
-          <div id="col2" className="pl-6">
-            <div className="flex pb-6 pt-8">
-              <div id="heading" className="font-[poppins] font-semibold text-lg">
+          <div id="col2" className="w-full pl-6">
+            <div className="flex items-center justify-between pb-6 pt-8">
+              <div
+                id="heading"
+                className="font-[poppins] font-semibold text-lg"
+              >
                 {title}
               </div>
 
               <div id="icons" className="justify-end items-center pl-8">
-                <i class="fa-regular fa-heart mr-3 hover:cursor-pointer"></i>
-                <i class="fa-solid fa-share mr-3 hover:cursor-pointer"></i>
-                <i class="fa-solid fa-ellipsis-vertical hover:cursor-pointer"></i>
+                <div className="flex">
+                  <span className="hover:cursor-pointer mr-3">
+                    <FaRegHeart />
+                  </span>
+
+                  <span className="hover:cursor-pointer mr-3">
+                    <FaShare />
+                  </span>
+
+                  <span className="hover:cursor-pointer">
+                    <FaEllipsisVertical />
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -73,7 +86,9 @@ export function RentalPropertyCard({ property }) {
             >
               <div id="column1" className="py-2 px-1 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-couch fa-2x mr-3 mt-1 text-gray-800"></i>
+                  <span className="mr-3 text-gray-800">
+                    <FaCouch style={{ fontSize: 40 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Furnishing</div>
                     <div className="text-xs">{furnishing}</div>
@@ -81,7 +96,9 @@ export function RentalPropertyCard({ property }) {
                 </div>
 
                 <div className="flex">
-                  <i class="fa-solid fa-chart-area fa-2x mr-3 mt-1 text-gray-800"></i>
+                  <span className="mr-3 mt-1 text-gray-800">
+                    <FaChartArea style={{ fontSize: 34 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Carpet Area</div>
                     <div className="text-xs">{carpetArea}</div>
@@ -91,7 +108,9 @@ export function RentalPropertyCard({ property }) {
 
               <div id="column2" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-bath fa-2x mr-3 mt-1 text-gray-800"></i>
+                  <span className="mr-3 mt-1 text-gray-800">
+                    <FaBath style={{ fontSize: 34 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Bathroom</div>
                     <div className="text-xs">{bathroom}</div>
@@ -99,7 +118,9 @@ export function RentalPropertyCard({ property }) {
                 </div>
 
                 <div className="flex">
-                  <i class="fa-solid fa-stairs fa-2x mr-3 mt-1 text-gray-800"></i>
+                  <span className="mr-3 mt-1 text-gray-800">
+                    <GiStairs style={{ fontSize: 36 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Floor</div>
                     <div className="text-xs">{floor}</div>
@@ -109,7 +130,9 @@ export function RentalPropertyCard({ property }) {
 
               <div id="column3" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
-                  <i class="fa-solid fa-car fa-2x mr-3 mt-1 text-gray-800"></i>
+                  <span className="mr-3 mt-1 text-gray-800">
+                    <FaCar style={{ fontSize: 32 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Parking</div>
                     <div className="text-xs">{parking}</div>
@@ -117,7 +140,10 @@ export function RentalPropertyCard({ property }) {
                 </div>
 
                 <div className="flex">
-                  <i class="fa-solid fa-user-shield fa-2x mr-3 mt-1 text-gray-800"></i>
+                  <span className="mr-3 mt-1 text-gray-800">
+                    <FaUserShield style={{ fontSize: 36 }} />
+                  </span>
+
                   <div>
                     <div className="text-sm font-semibold">Security</div>
                     <div className="text-xs">{transaction}</div>

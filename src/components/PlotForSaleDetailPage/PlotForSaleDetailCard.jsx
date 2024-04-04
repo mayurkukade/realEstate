@@ -1,4 +1,27 @@
 import { React, useState } from "react";
+import { FaBed } from "react-icons/fa";
+import {
+  FaEllipsisVertical,
+  FaCouch,
+  FaBath,
+  FaCar,
+  FaHouseChimney,
+  FaRegBuilding,
+  FaChartSimple,
+  FaFax,
+  FaUser,
+  FaBuildingColumns,
+  FaPhone,
+  FaRegUser,
+  FaToriiGate,
+  FaRegCalendarCheck,
+  FaClone,
+  FaMaximize,
+  FaTrowelBricks,
+  FaBorderAll,
+} from "react-icons/fa6";
+import { GiStairs } from "react-icons/gi";
+import { MdBalcony } from "react-icons/md";
 
 import PlotForSaleImage1 from "../../assets/images/PlotForSaleImage1.jpeg";
 import PlotForSaleImage2 from "../../assets/images/PlotForSaleImage1.jpeg";
@@ -35,24 +58,17 @@ export function PlotForSaleDetailCard() {
               <div className="px-4">How much loan can I get?</div>
 
               <div id="icon" className="pl- ml-[540px] text-lg">
-                <div>
-                  <link
-                    rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-                    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-                    crossorigin="anonymous"
-                    referrerpolicy="no-referrer"
-                  />
-                </div>
                 <div className="">
-                  <i class="fa-solid fa-ellipsis-vertical hover:cursor-pointer"></i>
+                  <span className="hover:cursor-pointer">
+                    <FaEllipsisVertical />
+                  </span>
                 </div>
               </div>
             </div>
           </div>
 
           <div id="line2" className="text-start">
-            2BHK Flat for Sale in Royal Rahadki Green Phase-1, Pune
+            Plot for Sale in Royal Rahadki Green Phase-1, Pune
           </div>
         </div>
 
@@ -112,15 +128,23 @@ export function PlotForSaleDetailCard() {
               id="iconInformation"
               className="flex gap-6 p-3 bg-gray-200 rounded-lg w-fit"
             >
-              <div className="">
-                <i class="fa-solid fa-torii-gate fa-lg p-1"></i>Gated Colony
+              <div className="flex">
+                <span className="pr-1">
+                  <FaToriiGate style={{ fontSize: 18 }} />
+                </span>
+                Gated Colony
               </div>
-              <div>
-                <i class="fa-regular fa-calendar-check fa-lg p-1"></i>PMRDA
-                Approved
+              <div className="flex">
+                <span className="pr-1">
+                  <FaRegCalendarCheck style={{ fontSize: 18 }} />
+                </span>
+                PMRDA Approved
               </div>
-              <div>
-                <i class="fa-solid fa-clone fa-lg p-1"></i>Corner Plot
+              <div className="flex">
+                <span className="pr-1">
+                  <FaClone style={{ fontSize: 16 }} />
+                </span>
+                Corner Plot
               </div>
             </div>
 
@@ -130,9 +154,9 @@ export function PlotForSaleDetailCard() {
             >
               <div id="row1" className="flex py-2 px-1 justify-start">
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-regular fa-building fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-1 mt-1 text-gray-800">
+                    <FaRegBuilding style={{ fontSize: 32 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Plot Area</div>
                     <div className="text-sm">text</div>
@@ -140,9 +164,9 @@ export function PlotForSaleDetailCard() {
                 </div>
 
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-maximize fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-1 mt-1 text-gray-800">
+                    <FaMaximize style={{ fontSize: 30 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Dimension (LxB)</div>
                     <div className="text-sm">text</div>
@@ -150,9 +174,9 @@ export function PlotForSaleDetailCard() {
                 </div>
 
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-house-chimney fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-1 mt-1 text-gray-800">
+                    <FaHouseChimney style={{ fontSize: 32 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">
                       Transaction Type
@@ -164,9 +188,9 @@ export function PlotForSaleDetailCard() {
 
               <div id="row2" className="flex py-2 px-1 justify-start">
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-chart-simple fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-2 mt-1 text-gray-800">
+                    <FaChartSimple style={{ fontSize: 32 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Status</div>
                     <div className="text-sm">text</div>
@@ -174,9 +198,9 @@ export function PlotForSaleDetailCard() {
                 </div>
 
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-fax fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-2 mt-1 text-gray-800">
+                    <FaFax style={{ fontSize: 30 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Facing</div>
                     <div className="text-sm">text</div>
@@ -184,9 +208,9 @@ export function PlotForSaleDetailCard() {
                 </div>
 
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-trowel-bricks fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-2 mt-1 text-gray-800">
+                    <FaTrowelBricks style={{ fontSize: 28 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">
                       Any Construction
@@ -198,9 +222,9 @@ export function PlotForSaleDetailCard() {
 
               <div id="row3" className="flex py-2 px-1 justify-start">
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-car fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-2 mt-1 text-gray-800">
+                    <FaCar style={{ fontSize: 30 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Overlooking</div>
                     <div className="text-sm">text</div>
@@ -208,9 +232,9 @@ export function PlotForSaleDetailCard() {
                 </div>
 
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-user fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-2 mt-1 text-gray-800">
+                    <FaUser style={{ fontSize: 30 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">
                       Type of Ownership
@@ -220,9 +244,9 @@ export function PlotForSaleDetailCard() {
                 </div>
 
                 <div className="w-1/3 flex">
-                  <div>
-                    <i class="fa-solid fa-border-all fa-2x mr-2 pt-1 text-gray-800"></i>
-                  </div>
+                  <span className="mr-2 mt-1 text-gray-800">
+                    <FaBorderAll style={{ fontSize: 30 }} />
+                  </span>
                   <div>
                     <div className="text-sm font-semibold">Boundry Wall</div>
                     <div className="text-sm">text</div>
@@ -238,14 +262,22 @@ export function PlotForSaleDetailCard() {
         <div id="cardFooter" className="flex justify-between pt-4">
           <div className="text-start">
             <button className="text-sm text-white px-3 py-2 rounded-full bg-green-700">
-              Contact Owner
-              <i class="fa-solid fa-square-phone fa-lg pl-1"></i>
+              <div className="flex">
+                Contact Owner
+                <span className="pt-1 ml-1">
+                  <FaPhone />
+                </span>
+              </div>
             </button>
           </div>
 
           <div className="text-sm py-2">
-            <i class="fa-regular fa-user pr-2"></i>
-            Last contact mode 1 day ago
+            <div className="flex">
+              <span className="pt-1 mr-1">
+                <FaRegUser />
+              </span>
+              Last contact mode 1 day ago
+            </div>
           </div>
         </div>
       </div>

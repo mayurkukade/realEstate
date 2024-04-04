@@ -1,17 +1,10 @@
 import { Navbar, Button, Input } from "@material-tailwind/react";
+import { FaMagnifyingGlass, FaArrowDownWideShort } from "react-icons/fa6";
 
 export function PropertyPageNavbar() {
   return (
     <div>
-      <div>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
-      </div>
+      
 
       <Navbar
         variant="gradient"
@@ -32,9 +25,9 @@ export function PropertyPageNavbar() {
             <Button
               size="sm"
               color="white"
-              className="!absolute right-1 top-1 rounded"
+              className="!absolute right-1 top-1 bottom-1 rounded"
             >
-              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+              <FaMagnifyingGlass style={{ fontSize: 16 }} />
             </Button>
           </div>
         </div>
@@ -74,11 +67,10 @@ export function PropertyPageNavbar() {
           class="flex select-none items-center gap-2 rounded-lg bg-gray-200 py-2 px-4 text-center align-middle font-sans text-xs font-bold text-black shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           type="button"
         >
-          <i class="fa-solid fa-arrow-down-wide-short fa-lg"></i>
+          <FaArrowDownWideShort style={{ fontSize: 16 }} />
           Sort by: Relevance
         </button>
       </div>
-
     </div>
   );
 }

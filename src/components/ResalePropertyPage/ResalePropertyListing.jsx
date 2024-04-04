@@ -33,7 +33,7 @@ export function ResalePropertyListing() {
       price: "INR.47 lakh",
       contact: "9428003255",
       location: "500meter from Chichwad Railway Station",
-      title: "2 BHK Apartments for Sale in Gupta Cherry Hills, Chinchwad",
+      title: "2 BHK Apartments for Sale in Cherry Hills, Chinchwad",
       furnishing: "Fully-furnished",
       carpetArea: "692 sqft",
       bathroom: 1,

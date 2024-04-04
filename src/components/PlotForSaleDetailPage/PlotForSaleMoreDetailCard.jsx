@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { FaPhone } from "react-icons/fa6";
 
 export function PlotForSaleMoreDetailCard() {
   return (
@@ -7,7 +8,9 @@ export function PlotForSaleMoreDetailCard() {
         id="cardBody"
         className="font-[lato] m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl"
       >
-        <div id="heading" className="font-[poppins] font-semibold text-xl mb-4">More Details</div>
+        <div id="heading" className="font-[poppins] font-semibold text-xl mb-4">
+          More Details
+        </div>
 
         <div className="flex space-x-8">
           <div id="col1">
@@ -41,20 +44,14 @@ export function PlotForSaleMoreDetailCard() {
         </div>
 
         <div id="contactDetails">
-          <div>
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-              integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-              crossorigin="anonymous"
-              referrerpolicy="no-referrer"
-            />
-          </div>
-
           <div className="text-start">
             <button className="text-sm text-white px-3 py-2 rounded-full bg-green-700">
-              Contact Owner
-              <i class="fa-solid fa-square-phone fa-lg pl-1"></i>
+              <div className="flex">
+                Contact Owner
+                <span className="pt-1 ml-1">
+                  <FaPhone />
+                </span>
+              </div>
             </button>
           </div>
         </div>

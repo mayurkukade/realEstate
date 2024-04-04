@@ -51,7 +51,7 @@ export function NewPropertyListing() {
       price: "INR.18 lakh",
       contact: "8866445533",
       location: "200meter from Keshav Nagar",
-      title: "2BHK Apartment for Sale in Konark Virtue Keshav Nagar, Pune",
+      title: "2BHK Apartment for Sale in Konark Virtue, Pune",
       furnishing: "Furnished",
       carpetArea: "792 sqft",
       bathroom: 2,

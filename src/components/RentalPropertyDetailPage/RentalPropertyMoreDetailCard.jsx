@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { FaPhone } from "react-icons/fa6";
 
 export function RentalPropertyMoreDetailCard() {
   return (
@@ -41,20 +42,16 @@ export function RentalPropertyMoreDetailCard() {
         </div>
 
         <div id="contactDetails">
-          <div>
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-              integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-              crossorigin="anonymous"
-              referrerpolicy="no-referrer"
-            />
-          </div>
+          
 
           <div className="text-start">
             <button className="text-sm text-white px-3 py-2 rounded-full bg-green-700">
-              Contact Owner
-              <i class="fa-solid fa-square-phone fa-lg pl-1"></i>
+            <div className="flex">
+                Contact Owner
+                <span className="pt-1 ml-1">
+                  <FaPhone />
+                </span>
+              </div>
             </button>
           </div>
         </div>
