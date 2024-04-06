@@ -105,7 +105,7 @@ export function RentalPropertyListing() {
     <div>
       <div
         id="heading"
-        className="font-[poppins] text-3xl font-semibold ml-64 mt-4"
+        className="font-[poppins] text-3xl font-semibold w-full grid place-content-center m-4"
       >
         Owner Properties for Rent in Pune
       </div>

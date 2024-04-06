@@ -10,21 +10,21 @@ import Image2 from "../assets/images/Image2.jpg";
 
 export function PreViewPropertyCard() {
   return (
-    <div className="font-[lato] grid place-content-center">
-      <div className=" m-4 p-6 w-[1100px] border rounded-lg border-cyan-100 shadow-xl">
-        <div className="font-[poppins] text-2xl font-semibold mb-5">
+    <div className="font-[lato] md:grid md:place-content-center m-4">
+      <div className=" p-6 w-full md:w-[1100px] border rounded-lg border-cyan-100 shadow-xl">
+        <div className="font-[poppins] text-2xl font-semibold mb-4 md:mb-5">
           Previously Viewed Properties
         </div>
 
-        <div className="flex gap-x-6">
+        <div className="flex flex-col md:flex-row md:gap-x-6">
           <Card
             id="card1"
-            className="w-full h-56 max-w-[28rem] flex-row border border-cyan-100 shadow-xl"
+            className="w-full md:h-56 max-w-[28rem] flex flex-col md:flex-row border border-cyan-100 shadow-xl mb-4 md:mb-0"
           >
             <CardHeader
               shadow={false}
               floated={false}
-              className="m-0 w-2/5 shrink-0 rounded-r-none"
+              className="m-0 md:w-2/5 shrink-0 md:rounded-r-none"
             >
               <img
                 src={Image1}
@@ -43,13 +43,13 @@ export function PreViewPropertyCard() {
               <Typography
                 variant="h4"
                 color="blue-gray"
-                className="font-[poppins] text-xl mb-2"
+                className="font-[poppins] text-xl mb-1 md:mb-2"
               >
                 ₹ 90.0 Lac | 707 sqft
               </Typography>
               <Typography
                 color="gray"
-                className="font-[lato] text-black mb-3 font-normal "
+                className="font-[lato] text-black mb-1 md:mb-3 font-normal "
               >
                 Green Hills Apartment Wagholi, Pune
               </Typography>
@@ -80,12 +80,12 @@ export function PreViewPropertyCard() {
 
           <Card
             id="card1"
-            className="w-full h-56 max-w-[28rem] flex-row border border-cyan-100 shadow-xl"
+            className="w-full md:h-56 max-w-[28rem] flex flex-col md:flex-row border border-cyan-100 shadow-xl"
           >
             <CardHeader
               shadow={false}
               floated={false}
-              className="m-0 w-2/5 shrink-0 rounded-r-none"
+              className="m-0 md:w-2/5 shrink-0 md:rounded-r-none"
             >
               <img
                 src={Image1}
@@ -104,13 +104,13 @@ export function PreViewPropertyCard() {
               <Typography
                 variant="h4"
                 color="blue-gray"
-                className="font-[poppins] text-xl mb-2"
+                className="font-[poppins] text-xl mb-1 md:mb-2"
               >
                 ₹ 90.0 Lac | 707 sqft
               </Typography>
               <Typography
                 color="gray"
-                className="font-[lato] text-black mb-3 font-normal"
+                className="font-[lato] text-black mb-1 md:mb-3 font-normal "
               >
                 Green Hills Apartment Wagholi, Pune
               </Typography>

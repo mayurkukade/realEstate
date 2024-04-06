@@ -54,16 +54,16 @@ export function PostPropertyCard() {
   };
 
   return (
-    <div className="grid place-content-center">
-      <div className="flex">
-        <div className="w-[400px]">
-          <img className="w-full pt-24" src={image} alt="" />
+    <div className="md:grid md:place-content-center">
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:w-[400px] p-2">
+          <img className="w-full pt-4 md:pt-24" src={image} alt="" />
         </div>
 
-        <div className="pt-[148px] h-[306px] w-[410px] pl-8">
+        <div className="pt-2 md:pt-[148px] h-[306px] w-full md:w-[410px] pl-4">
           <div className="space-y-3">
-            <div className="font-[poppins] pb-8 text-start space-y-3">
-              <div className="text-4xl font-semibold space-y-3">
+            <div className="font-[poppins] pb-2 md:pb-8 text-start space-y-3">
+              <div className="text-4xl font-semibold space-y-2">
                 Post property Ad to sell or rent online for
               </div>
               <div className="text-4xl font-semibold text-teal-400">Free!</div>
@@ -92,7 +92,7 @@ export function PostPropertyCard() {
         <Card
           color="transparent"
           shadow={false}
-          className="w-[390px] h-[543px] p-6 border border-teal-100 ml-8 mt-8"
+          className="md:w-[390px] h-[543px] p-6 border border-teal-100 m-4 md:m-8 mt-8"
         >
           <form className="">
             <div className="flex flex-col gap-6">
@@ -280,15 +280,15 @@ export function PostPropertyCard() {
         </Card>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-8 md:mt-12 mx-4 md:mx-1">
         <div className="grid place-content-center">
-          <div className="font-[poppins] text-4xl  text-center w-96 font-semibold">
+          <div className="font-[poppins] text-4xl  text-center md:w-96 font-semibold">
             Post Your Property in 3 Simple Steps
           </div>
         </div>
 
-        <div className="font-[lato] flex justify-evenly mt-6">
-          <div id="col1" className="w-[350px] ">
+        <div className="font-[lato] flex flex-col md:flex-row justify-evenly mt-6 gap-6 md:gap-0">
+          <div id="col1" className="w-full md:w-[350px] ">
             <div className="h-[48px] w-[48px]">
               <img src={PostPropertyIcon1} alt="Icon" />
             </div>
@@ -301,7 +301,7 @@ export function PostPropertyCard() {
             </div>
           </div>
 
-          <div id="col2" className="w-[350px]">
+          <div id="col2" className="w-full md:w-[350px]">
             <div className="h-[48px] w-[48px]">
               <img src={PostPropertyIcon2} alt="Icon" />
             </div>
@@ -314,7 +314,7 @@ export function PostPropertyCard() {
             </div>
           </div>
 
-          <div id="col3" className="w-[350px]">
+          <div id="col3" className="w-full md:w-[350px]">
             <div className="h-[48px] w-[48px]">
               <img src={PostPropertyIcon3} alt="Icon" />
             </div>
@@ -329,15 +329,15 @@ export function PostPropertyCard() {
         </div>
       </div>
 
-      <div className="mt-12 mb-16">
+      <div className="mt-8 md:mt-12 mx-4 md:mx-1 mb-16">
         <div className="grid place-content-center">
-          <div className="font-[poppins] text-4xl  text-center w-96 font-semibold">
+          <div className="font-[poppins] text-4xl  text-center md:w-96 font-semibold">
             How it works
           </div>
         </div>
 
-        <div className="font-[lato] flex justify-evenly mt-6">
-          <div id="col1" className="w-[350px]">
+        <div className="font-[lato] flex flex-col md:flex-row justify-evenly mt-6 gap-6 md:gap-0">
+          <div id="col1" className="w-full md:w-[350px]">
             <div className="h-[120px] w-[160px]">
               <img src={PostPropertyImage1} alt="Icon" />
             </div>
@@ -350,7 +350,7 @@ export function PostPropertyCard() {
             </div>
           </div>
 
-          <div id="col2" className="w-[350px]">
+          <div id="col2" className="w-full md:w-[350px]">
             <div className="h-[120px] w-[160px]">
               <img src={PostPropertyImage2} alt="Icon" />
             </div>
@@ -362,7 +362,7 @@ export function PostPropertyCard() {
             </div>
           </div>
 
-          <div id="col3" className="w-[350px]">
+          <div id="col3" className="w-full md:w-[350px]">
             <div className="h-[120px] w-[160px]">
               <img src={PostPropertyImage3} alt="Icon" />
             </div>

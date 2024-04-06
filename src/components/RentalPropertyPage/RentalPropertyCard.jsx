@@ -28,13 +28,13 @@ export function RentalPropertyCard({ property }) {
   } = property;
 
   return (
-    <div className="grid place-content-center my-4 ">
+    <div className="md:grid md:place-content-center m-4 ">
       <div
         id="cardBody"
-        className="font-[lato] w-[1024px] border border-cyan-100 rounded-lg shadow-xl p-4"
+        className="font-[lato] flex flex-col md:flex-row w-full md:w-[1024px] border border-cyan-100 rounded-lg shadow-xl p-4"
       >
-        <div className="flex">
-          <div id="col1" className="w-[330px] border-cyan-600">
+        
+          <div id="col1" className="w-full md:w-[330px] border-cyan-600">
             <div id="image">
               <img
                 src={image}
@@ -44,18 +44,18 @@ export function RentalPropertyCard({ property }) {
             </div>
 
             <div id="details" className="text-sm pt-4">
-              <div className="flex font-semibold">
+              <div className="flex justify-between font-semibold">
                 <div className="text-start">Owner: {owner}</div>
-                <div className="pl-20">{price}</div>
+                <div className="">{price}</div>
               </div>
 
               <div className="text-start pt-2">Contact: {contact}</div>
-              <div className="text-start pt-12 w-[800px]">{location}</div>
+              <div className="text-start md:pt-12 md:w-[800px]">{location}</div>
             </div>
           </div>
 
-          <div id="col2" className="w-full pl-6">
-            <div className="flex items-center justify-between pb-6 pt-8">
+          <div id="col2" className="md:pl-6 w-full">
+            <div className="flex items-center justify-between pb-6 pt-4 md:pt-8">
               <div
                 id="heading"
                 className="font-[poppins] font-semibold text-lg"
@@ -63,7 +63,7 @@ export function RentalPropertyCard({ property }) {
                 {title}
               </div>
 
-              <div id="icons" className="justify-end items-center pl-8">
+              <div id="icons" className="">
                 <div className="flex">
                   <span className="hover:cursor-pointer mr-3">
                     <FaRegHeart />
@@ -82,9 +82,12 @@ export function RentalPropertyCard({ property }) {
 
             <div
               id="icon"
-              className="w-[550px] h-[100px] flex justify-evenly border-cyan-600"
+              className="w-full md:w-[550px] md:h-[100px] flex flex-col md:flex-row md:justify-evenly border-cyan-600"
             >
-              <div id="column1" className="py-2 px-1 justify-evenly space-y-4">
+              <div
+                id="paste here"
+                className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4"
+              >
                 <div className="flex">
                   <span className="mr-3 text-gray-800">
                     <FaCouch style={{ fontSize: 40 }} />
@@ -104,9 +107,7 @@ export function RentalPropertyCard({ property }) {
                     <div className="text-xs">{carpetArea}</div>
                   </div>
                 </div>
-              </div>
 
-              <div id="column2" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
                   <span className="mr-3 mt-1 text-gray-800">
                     <FaBath style={{ fontSize: 34 }} />
@@ -126,9 +127,7 @@ export function RentalPropertyCard({ property }) {
                     <div className="text-xs">{floor}</div>
                   </div>
                 </div>
-              </div>
 
-              <div id="column3" className="p-2 justify-evenly space-y-4">
                 <div className="flex">
                   <span className="mr-3 mt-1 text-gray-800">
                     <FaCar style={{ fontSize: 32 }} />
@@ -152,12 +151,12 @@ export function RentalPropertyCard({ property }) {
               </div>
             </div>
 
-            <div id="details" className="text-start mt-6 text-sm space-y-4">
+            <div id="details" className="mt-4 md:mt-6 text-sm md:space-y-4">
               <div>Special Price Offered by Owner</div>
               <div>{description}</div>
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
   );

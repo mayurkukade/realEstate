@@ -4,22 +4,20 @@ import { FaMagnifyingGlass, FaArrowDownWideShort } from "react-icons/fa6";
 export function PropertyPageNavbar() {
   return (
     <div>
-      
-
       <Navbar
         variant="gradient"
         color="blue-gray"
-        className="mx-auto max-w-screen-3xl rounded-none from-blue-700  py-3"
+        className="mx-auto max-w-screen-3xl rounded-none from-blue-700 p-3"
       >
-        <div className="ml-40 flex flex-wrap items-center justify-between gap-y-4 text-white">
+        <div className="md:ml-40 flex flex-wrap items-center justify-between text-white">
           <div className="relative flex w-full gap-2 md:w-max">
             <Input
               type="search"
               color="white"
               label="Find your location"
-              className="pr-20"
+              className=""
               containerProps={{
-                className: "min-w-[388px]",
+                className: "md:min-w-[388px]",
               }}
             />
             <Button
@@ -33,8 +31,8 @@ export function PropertyPageNavbar() {
         </div>
       </Navbar>
 
-      <div class="flex flex-col items-center justify-between gap-4 md:flex-row mx-auto max-w-screen-xl pt-2">
-        <div class="block w-full overflow-hidden md:w-max">
+      <div class="flex flex-roe items-center justify-between  md:flex-row mx-auto max-w-screen-xl pt-2 px-1">
+        <div class="block  overflow-hidden md:w-max">
           <nav>
             <ul
               role="tablist"
@@ -42,7 +40,7 @@ export function PropertyPageNavbar() {
             >
               <li
                 role="tab"
-                class="relative flex items-center justify-center w-full h-full px-2 py-1 font-sans text-base antialiased font-normal leading-relaxed text-center bg-transparent cursor-pointer select-none text-blue-gray-900"
+                class="relative flex items-center justify-center w-full h-full px-2 py-1 font-sans text-xs md:text-base antialiased font-normal leading-relaxed text-center bg-transparent cursor-pointer select-none text-blue-gray-900"
                 data-value="all"
               >
                 <div class="z-20 text-inherit">
@@ -52,7 +50,7 @@ export function PropertyPageNavbar() {
               </li>
               <li
                 role="tab"
-                class="relative flex items-center justify-center w-full h-full px-2 py-1 font-sans text-base antialiased font-normal leading-relaxed text-center bg-transparent cursor-pointer select-none text-blue-gray-900"
+                class="relative flex items-center justify-center w-full h-full px-2 py-1 font-sans text-xs md:text-base antialiased font-normal leading-relaxed text-center bg-transparent cursor-pointer select-none text-blue-gray-900"
                 data-value="monitored"
               >
                 <div class="z-20 text-inherit">
@@ -64,7 +62,7 @@ export function PropertyPageNavbar() {
         </div>
 
         <button
-          class="flex select-none items-center gap-2 rounded-lg bg-gray-200 py-2 px-4 text-center align-middle font-sans text-xs font-bold text-black shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          class="flex select-none items-center gap-2 rounded-lg bg-gray-200 py-2 px-4 text-center align-middle font-sans text-xs md:font-bold text-black shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           type="button"
         >
           <FaArrowDownWideShort style={{ fontSize: 16 }} />

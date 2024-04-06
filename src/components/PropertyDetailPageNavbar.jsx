@@ -7,7 +7,7 @@ export function PropertyDetailPageNavbar() {
       <Navbar
         variant="gradient"
         color="blue-gray"
-        className="max-w-screen-3xl from-blue-700 px-52 py-3 rounded-none"
+        className="mx-auto max-w-screen-3xl rounded-none from-blue-700 p-3 md:pl-40"
       >
         <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
           <div className="relative flex w-full gap-2 md:w-max">

@@ -3,10 +3,10 @@ import { FaPhone } from "react-icons/fa6";
 
 export function ResalePropertyMoreDetailCard() {
   return (
-    <div className="grid place-content-center">
+    <div className="md:grid md:place-content-center m-4">
       <div
         id="cardBody"
-        className="font-[lato] m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl"
+        className="font-[lato] p-6 w-full md:w-[1100px] border border-cyan-100 rounded-lg shadow-xl"
       >
         <div id="heading" className="font-[poppins] font-semibold text-xl mb-4">
           More Details
@@ -37,7 +37,7 @@ export function ResalePropertyMoreDetailCard() {
           </div>
         </div>
 
-        <div className="my-6">
+        <div className="my-4 md:my-6">
           Description : Multistorey 3 side open apartment is available for sale.
           It has covered area of 998 sq-ft, it is a good location property.
           please contact for more details.
