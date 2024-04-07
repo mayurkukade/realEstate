@@ -1,16 +1,12 @@
 import { React, useState } from "react";
-import { FaBed } from "react-icons/fa";
 import {
   FaEllipsisVertical,
-  FaCouch,
-  FaBath,
   FaCar,
   FaHouseChimney,
   FaRegBuilding,
   FaChartSimple,
   FaFax,
   FaUser,
-  FaBuildingColumns,
   FaPhone,
   FaRegUser,
   FaToriiGate,
@@ -20,8 +16,6 @@ import {
   FaTrowelBricks,
   FaBorderAll,
 } from "react-icons/fa6";
-import { GiStairs } from "react-icons/gi";
-import { MdBalcony } from "react-icons/md";
 
 import PlotForSaleImage1 from "../../assets/images/PlotForSaleImage1.jpeg";
 import PlotForSaleImage2 from "../../assets/images/PlotForSaleImage1.jpeg";
@@ -43,26 +37,24 @@ export function PlotForSaleDetailCard() {
   const imageSources = [PlotForSaleImage2, PlotForSaleImage3];
 
   return (
-    <div className="grid place-content-center">
+    <div className="md:grid md:place-content-center m-4">
       <div
         id="cardHeading"
-        className="font-[lato] m-4 p-6 w-[1100px] border border-cyan-100 rounded-lg shadow-xl  text-lg"
+        className="font-[lato] p-6 md:w-[1100px] border border-cyan-100 rounded-lg shadow-xl  text-lg"
       >
         <div id="heading" className="font-[poppins] pt-2">
-          <div id="line1" className="flex my-1">
-            <div>₹ 90.0 Lac</div>
-            <div className="px-4">EMI- ₹ 41k</div>
-            <span className="leading-5 text-lg pt-1">|</span>
+          <div id="line1" className="w-full flex flex-col md:flex-row my-1">
+            <div className="flex min-w-fit">
+              <div>₹ 90.0 Lac</div>
+              <div className="px-4">EMI- ₹ 41k</div>
+              <span className="leading-5 text-lg pt-1 pr-4">|</span>
+            </div>
 
-            <div className=" flex justify-evenly">
-              <div className="px-4">How much loan can I get?</div>
+            <div className="w-full flex flex-row justify-between">
+              <div className="">How much loan can I get?</div>
 
-              <div id="icon" className="pl- ml-[540px] text-lg">
-                <div className="">
-                  <span className="hover:cursor-pointer">
-                    <FaEllipsisVertical />
-                  </span>
-                </div>
+              <div id="icon" className="hover:cursor-pointer text-lg pt-1">
+                <FaEllipsisVertical />
               </div>
             </div>
           </div>
@@ -72,9 +64,9 @@ export function PlotForSaleDetailCard() {
           </div>
         </div>
 
-        <div id="cardBody" className="flex  ">
+        <div id="cardBody" className="flex flex-col md:flex-row">
           <div id="images" className="py-4  border-cyan-600">
-            <div className="w-80 h-auto overflow-hidden rounded-lg bg-clip-padding ">
+            <div className="w-full md:w-80 h-auto overflow-hidden rounded-lg bg-clip-padding">
               <div className="w-full h-44 rounded-t-lg rounded-b-none bg-clip-padding">
                 <img
                   onClick={() => openModal(PlotForSaleImage1)}
@@ -123,10 +115,10 @@ export function PlotForSaleDetailCard() {
             )}
           </div>
 
-          <div id="information" className="pl-6 mt-4 text-sm  ">
+          <div id="information" className="md:pl-6 mt-4 text-sm">
             <div
               id="iconInformation"
-              className="flex gap-6 p-3 bg-gray-200 rounded-lg w-fit"
+              className="grid grid-cols-2 md:grid-flow-col gap-3 md:gap-6 p-3 bg-gray-200 rounded-lg md:w-fit"
             >
               <div className="flex">
                 <span className="pr-1">
@@ -150,10 +142,13 @@ export function PlotForSaleDetailCard() {
 
             <div
               id="table"
-              className="w-[550px] h-[200px] mt-8 text-start  border-cyan-600"
+              className="md:w-[550px] md:h-[200px] mt-4 md:mt-8 text-start  border-cyan-600"
             >
-              <div id="row1" className="flex py-2 px-1 justify-start">
-                <div className="w-1/3 flex">
+              <div
+                id="paste here"
+                className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4"
+              >
+                <div className="flex">
                   <span className="mr-1 mt-1 text-gray-800">
                     <FaRegBuilding style={{ fontSize: 32 }} />
                   </span>
@@ -163,7 +158,7 @@ export function PlotForSaleDetailCard() {
                   </div>
                 </div>
 
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-1 mt-1 text-gray-800">
                     <FaMaximize style={{ fontSize: 30 }} />
                   </span>
@@ -173,7 +168,7 @@ export function PlotForSaleDetailCard() {
                   </div>
                 </div>
 
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-1 mt-1 text-gray-800">
                     <FaHouseChimney style={{ fontSize: 32 }} />
                   </span>
@@ -184,10 +179,8 @@ export function PlotForSaleDetailCard() {
                     <div className="text-sm">text</div>
                   </div>
                 </div>
-              </div>
 
-              <div id="row2" className="flex py-2 px-1 justify-start">
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-2 mt-1 text-gray-800">
                     <FaChartSimple style={{ fontSize: 32 }} />
                   </span>
@@ -197,7 +190,7 @@ export function PlotForSaleDetailCard() {
                   </div>
                 </div>
 
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-2 mt-1 text-gray-800">
                     <FaFax style={{ fontSize: 30 }} />
                   </span>
@@ -207,7 +200,7 @@ export function PlotForSaleDetailCard() {
                   </div>
                 </div>
 
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-2 mt-1 text-gray-800">
                     <FaTrowelBricks style={{ fontSize: 28 }} />
                   </span>
@@ -218,10 +211,8 @@ export function PlotForSaleDetailCard() {
                     <div className="text-sm">text</div>
                   </div>
                 </div>
-              </div>
 
-              <div id="row3" className="flex py-2 px-1 justify-start">
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-2 mt-1 text-gray-800">
                     <FaCar style={{ fontSize: 30 }} />
                   </span>
@@ -231,7 +222,7 @@ export function PlotForSaleDetailCard() {
                   </div>
                 </div>
 
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-2 mt-1 text-gray-800">
                     <FaUser style={{ fontSize: 30 }} />
                   </span>
@@ -243,7 +234,7 @@ export function PlotForSaleDetailCard() {
                   </div>
                 </div>
 
-                <div className="w-1/3 flex">
+                <div className="flex">
                   <span className="mr-2 mt-1 text-gray-800">
                     <FaBorderAll style={{ fontSize: 30 }} />
                   </span>
@@ -257,7 +248,7 @@ export function PlotForSaleDetailCard() {
           </div>
         </div>
 
-        <div className="border border-gray-500 border-b-1 mt-6"></div>
+        <div className="border border-gray-500 border-b-1 mt-4 md:mt-6"></div>
 
         <div id="cardFooter" className="flex justify-between pt-4">
           <div className="text-start">

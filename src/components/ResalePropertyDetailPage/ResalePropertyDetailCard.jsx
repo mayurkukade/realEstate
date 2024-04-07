@@ -66,7 +66,7 @@ export function ResalePropertyDetailCard() {
 
         <div id="cardBody" className="flex flex-col md:flex-row">
           <div id="images" className="py-4  border-cyan-600">
-            <div className="w-full md:w-80 h-auto overflow-hidden rounded-lg bg-clip-padding ">
+            <div className="w-full md:w-80 h-auto overflow-hidden rounded-lg bg-clip-padding">
               <div className="w-full h-44 rounded-t-lg rounded-b-none bg-clip-padding">
                 <img
                   onClick={() => openModal(Image1)}
@@ -115,7 +115,7 @@ export function ResalePropertyDetailCard() {
             )}
           </div>
 
-          <div id="information" className="md:pl-6 mt-4 text-sm  ">
+          <div id="information" className="md:pl-6 mt-4 text-sm">
             <div
               id="iconInformation"
               className="grid grid-cols-2 md:grid-flow-col gap-3 md:gap-6 p-3 bg-gray-200 rounded-lg md:w-fit"
