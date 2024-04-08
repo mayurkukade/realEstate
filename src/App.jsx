@@ -12,6 +12,7 @@ import { PlotForSalePage } from "./components/PlotForSalePage/PlotForSalePage";
 import { NewPropertyDetailPage } from "./components/NewPropertyDetailPage/NewPropertyDetailPage";
 import { PlotForSaleDetailPage } from "./components/PlotForSaleDetailPage/PlotForSaleDetailPage";
 import { ResalePropertyDetailPage } from "./components/ResalePropertyDetailPage/ResalePropertyDetailPage";
+import { FavoritePage } from "./components/FavoritePage/FavoritePage";
 
 function App() {
   return (
@@ -34,7 +35,9 @@ function App() {
 
       {/* <PlotForSaleDetailPage></PlotForSaleDetailPage> */}
 
-      <PostPropertyCard></PostPropertyCard>
+      {/* <PostPropertyCard></PostPropertyCard> */}
+
+      <FavoritePage></FavoritePage>
     </div>
   );
 }
