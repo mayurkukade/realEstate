@@ -3,6 +3,8 @@ import {
     Button,
     Input,
   } from "@material-tailwind/react";
+  import { FaSortAmountDown } from "react-icons/fa";
+
 
    
   export function ServiceNavbar() {
@@ -10,10 +12,10 @@ import {
         <section>
       <Navbar
         variant="gradient"
-        className="mx-5 bg-[#4a61e3] px-4 py-3 "
+        className="mx-auto rounded-none md:rounded-xl bg-[#4a61e3] px-4 py-3 "
       >
         <div className="flex flex-wrap items-center justify-between gap-y-4 text-white Cap">
-          <div className="relative flex w-full gap-2 md:w-max font-[Lato]">
+          <div className="relative flex w-full gap-2  md:w-auto font-[Lato]">
             <Input
               type="search"
               color="white"
@@ -34,12 +36,12 @@ import {
         </div>
       </Navbar>
 
-      <div className=" flex mx-8 mt-5 justify-between ">
-        <div>
+      <div className=" flex flex-col md:flex-row mx-8 mt-4 justify-between ">
+        <div className="mb-3 md:mb-0">
             <Button
               size="sm"
               color="white"
-              className="bg-[#ffffff] border capitalize text-sm font-[Lato] font-normal mr-5"
+              className="bg-[#ffffff] border capitalize text-sm font-[Lato] font-normal mr-5 md:mr-5"
             >
               Services
             </Button>
@@ -56,8 +58,9 @@ import {
             <Button
               size="sm"
               color="white"
-              className="flex text-end justify-end items-end rounded-full bg-[#ffffff]  border capitalize text-sm font-normal font-[Lato] px-5"
+              className="flex justify-end items-end rounded-full bg-[#ffffff]  border capitalize text-sm font-normal font-[Lato] px-5"
             >
+              <span className="mr-2"><FaSortAmountDown /></span>
             Sort by : Relevance
             </Button>
             </div>

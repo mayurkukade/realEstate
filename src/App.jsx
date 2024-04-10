@@ -26,7 +26,7 @@ function App() {
      <ACService/>
     <About/> 
     <SellRentCard/>
-    <Services/>
+    <Services/> 
    
     {/* <CarpenterService/> */}
     {/* <DthService/> */}

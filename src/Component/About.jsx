@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import aboutbg from "../assets/images/aboutbg.jpg";
+import { FaArrowLeft, FaArrowRight, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 function About() {
   const Data = [
@@ -50,12 +52,12 @@ function About() {
         <div className=" md:w-auto flex flex-wrap flex-row justify-center px-20">
           <div className="py-[40px] flex flex-col text-center">
             <div>
-              <h2 className="text-xl text-[#353535] py-2 font-[Poppins]  font-semibold">
+              <h2 className="md:text-xl text-[18px] text-[#353535] py-2 font-[Poppins]  font-semibold">
                 A REAL ESTATE SOLUTIONS COMPANY
               </h2>
             </div>
             <div>
-              <h1 className="text-[34px] md:text-[58px] font-[Poppins] text-[#353535]">
+              <h1 className="text-[30px] md:text-[58px] font-[Poppins] text-[#353535]">
                 TRUE HOMES PROPERTY GROUP, LLC
               </h1>
             </div>
@@ -125,7 +127,7 @@ function About() {
       <div className="relative py-4">
         <div className=" md:flex flex-row px-20 justify-center gap-8 text-center overflow-clip bg-gray-100 text-[#353535] relative p-10">
           <div className="md:w-1/3  ">
-            <h1 className="text-[24px] pb-7 font-[Poppins] md:pb-8 font-semibold">
+            <h1 className="text-[24px] pb-5 font-[Poppins] md:pb-8 font-semibold">
               COMMUNITY REJUVENATION
             </h1>
             <p className="text-base pb-7 md:pb-4 font-medium font-[Lato]">
@@ -144,7 +146,7 @@ function About() {
             </p>
           </div>
           <div className="md:w-1/3">
-            <h1 className="text-[24px] pb-7 md:pb-8 font-semibold font-[Poppins]">TEAM APPROACH</h1>
+            <h1 className="text-[24px] pb-5 md:pb-8 font-semibold font-[Poppins]">TEAM APPROACH</h1>
             <p className="text-base font-medium font-[Lato]">
               We have an aggressive team approach, and a top-notch ability to
               expand our client base through our knowledge of deal structuring
@@ -154,14 +156,14 @@ function About() {
         </div>
       </div>
 
-      <div className="px-20 text-center py-10 ">
+      <div className="px-8 text-center py-5 ">
         <div className="pb-4">
           <h1 className="text-2xl text-[rgb(53,53,53)] font-[Poppins] font-semibold">
             WHY CHOOSE US
           </h1>
         </div>
         <div className="flex justify-center">
-          <span className="text-base text-[#353535] font-[Lato] md:w-[800px] pb-6">
+          <span className="text-base text-[#353535] font-[Lato] md:w-[800px]">
             Real Estate is committed to rejuvenating Space Coast communities
             through our systematic and disciplined approach, and creating
             lasting change in every neighborhood we encounter.
@@ -181,15 +183,6 @@ function About() {
                   <h1 className="pb-6 text-4xl flex font-[Poppins] justify-center">
                     Testimonials
                   </h1>
-                  <div>
-                    <link
-                      rel="stylesheet"
-                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-                      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-                      crossorigin="anonymous"
-                      referrerpolicy="no-referrer"
-                    />
-                  </div>
 
                   <div className="flex pb-4 items-center">
                     <div>
@@ -198,13 +191,10 @@ function About() {
                         className="bg-gray-200 p-2 mr-4 hover:bg-gray-300"
                         onClick={previous}
                       >
-                        <i class="fa-solid fa-arrow-left"></i>
+                        <FaArrowLeft/>
                       </button>
                     </div>
                     <div>
-                      <span className="text-xl mr-1">
-                        <i class="fa-solid fa-quote-left"></i>
-                      </span>
                       <span>{item.text_content}</span>
                     </div>
                     <div>
@@ -214,7 +204,7 @@ function About() {
                         className="bg-gray-200 p-2 ml-4 hover:bg-gray-300"
                         type="button"
                       >
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <FaArrowRight />
                       </button>
                     </div>
                   </div>
@@ -225,28 +215,21 @@ function About() {
       </section>
 
       <div className="p-[5px] md:flex flex-row px-20 justify-center gap-4 text-center text-[#353535] relative md:my-8 ">
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
         <div className="md:w-1/3 pb-5">
-          <h1 className="text-[24px] pb-5 ">
-            <i class="fa-solid fa-envelope"></i>
+          <h1 className="text-[24px] pb-5 flex justify-center">
+          <FaEnvelope />
           </h1>
           <p className="text-base pb-4 font-[Lato]">Ben.Bazemore@ RealEstate.com</p>
         </div>
         <div className="md:w-1/3 pb-5">
-          <h1 className="text-[24px] pb-4 ">
-            <i class="fa-solid fa-phone"></i>
+          <h1 className="text-[24px] pb-4 flex justify-center">
+          <BsFillTelephoneFill />
           </h1>
           <p className="text-base pb-4 font-[Lato]">321.323.9507</p>
         </div>
         <div className="md:w-1/3">
-          <h1 className="text-[24px] pb-4">
-            <i class="fa-solid fa-location-dot"></i>
+          <h1 className="text-[24px] pb-4 flex justify-center">
+          <FaMapMarkerAlt />
           </h1>
           <p className="text-base font-[Lato]">PO Box 140398, Melbourne, FL 32940</p>
         </div>

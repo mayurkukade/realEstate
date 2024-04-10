@@ -55,7 +55,7 @@ function SellRentCard() {
       onSubmit={handleSubmit}
       className="m-0 p-0 border-0 font-normal items-baseline"
     >
-      <div className="w-[412px] md:max-w-[600px] font-[Lato] m-auto md-w-[1200px] flex justify-center">
+      <div className="w-[412px] md:max-w-[600px] font-[Lato] m-auto md-w-[1200px] flex md:justify-center md:mx-auto mx-10">
         <div className="md:w-[500px] m-0 py-0 ">
           <div className="pt-16 pb-8 px-0 box-border md:w-[500px] ">
             <span>
@@ -351,14 +351,14 @@ function SellRentCard() {
                   <div className="pt-3 text-sm md:text-base">
                     <ul>
                       <li className="w-[630px] ml-0">
-                        <span className="mr-1 w-5 h-5 align-[2px]">
+                        <span className="mr-1 w-5 md:ml-0 h-5 -ml-[20px] align-[2px]">
                           <input
                             type="checkbox"
                             name="exclusive"
                             id="exclusive"
                           />
                         </span>
-                        <label className="relative left-[1px] md:ml-4 ml-2">
+                        <label className="relative left-[1px] md:ml-4 ">
                           I am Posting this property 'exclusively' on
                           Magicbricks
                         </label>
@@ -368,12 +368,12 @@ function SellRentCard() {
                   <div className="pt-3 text-sm md:text-base">
                     <ul>
                       <li className="w-[412px] md:w-[630px] ml-0">
-                        <span className="mr-1 w-5 h-5 align-[2px]">
+                        <span className="mr-1 w-5 h-5 align-[2px] -ml-[20px] md:ml-0">
                           <input type="checkbox" id="agreeterms" />
                         </span>
                         <label
                           htmlFor="agreeTerms"
-                          className="relative left-[1px] ml-2 md:ml-4"
+                          className="relative left-[1px] md:ml-4"
                         >
                           I agree to Magicbricks T&C, Privacy Policy, & Cookie
                           Policy
@@ -384,14 +384,14 @@ function SellRentCard() {
                   <div className="pt-3 text-sm md:text-base">
                     <ul>
                       <li className="w-[630px] ml-0">
-                        <span className="mr-1 w-5 h-5 align-[2px]">
+                        <span className="mr-1 w-5 h-5 align-[2px] -ml-[20px] md:ml-0">
                           <input
                             type="checkbox"
                             name="whatsapp"
                             id="whatsapp"
                           />
                         </span>
-                        <label className="relative left-[1px] ml-2 md:ml-4">
+                        <label className="relative left-[1px] md:ml-4">
                           I want to receive responses on{" "}
                           <span>
                             <img

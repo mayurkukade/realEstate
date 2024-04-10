@@ -15,7 +15,7 @@ import Gardening from '../assets/images/Services/Gardening.jpg';
 
 const ServiceCard = ({ imageSrc, altText, description,onClick }) => (
   <div className='flex flex-col items-center cursor-pointer transform transition-all relative'>
-    <img  className='object-cover w-full md:w-[250px] shadow-xl lg:w-[250px] h-[200px] md:h-[200px] lg:h-72 hover:shadow-2xl rounded-3xl hover:scale-105' src={imageSrc} alt={altText} onClick={onClick}/>
+    <img className='object-cover w-full md:w-[250px] shadow-xl lg:w-[250px] h-[200px] md:h-[200px] lg:h-72 hover:shadow-2xl rounded-xl md:rounded-3xl hover:scale-105' src={imageSrc} alt={altText} onClick={onClick}/>
     <p className='bg-[#FFFFFF] text-black text-center p-3 md:w-auto lg:w-auto w-full  border shadow-md rounded-lg absolute hover:bg-gray-100 -bottom-6 md:text-lg'>{description}</p>
   </div>
 );
@@ -31,7 +31,7 @@ function Services() {
             </h1>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-16 mx-10 justify-center p-14 md:p-20 font-[Lato]'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 mx-10 justify-center p-14 md:p-20 font-[Lato]'>
         <ServiceCard 
          imageSrc={AC}  altText='AC' description='AC Services' onClick={()=>alert("Clicked")} 
          />
