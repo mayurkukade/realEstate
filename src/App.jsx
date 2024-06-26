@@ -17,17 +17,15 @@ import HouseService from './Component/HouseService';
 import DthService from './Component/DthService';
 import GardeningService from './Component/GardeningService';
 import { ServiceNavbar } from './Component/ServiceNavbar';
-
 function App() {
 
 
   return (
     <>
-     <ACService/>
-    <About/> 
-    <SellRentCard/>
+     {/* <ACService/> */}
+    {/* <About/>  */}
+    {/* <SellRentCard/> */}
     <Services/> 
-   
     {/* <CarpenterService/> */}
     {/* <DthService/> */}
     {/* <PlumbingService/> */}

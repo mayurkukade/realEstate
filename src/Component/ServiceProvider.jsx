@@ -3,8 +3,10 @@ import { Rating } from "@material-tailwind/react";
 import { ServiceNavbar } from './ServiceNavbar';
 import { FaLocationDot } from 'react-icons/fa6';
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { useEffect } from 'react';
 
 function ServiceProvider({ serviceProviders }) {
+  useEffect(() => {     window.scrollTo(0, 0); }, []);
   return (
     <section className='w-full min-h-screen '>
       <ServiceNavbar/>       
@@ -48,7 +50,7 @@ function ServiceProvider({ serviceProviders }) {
               <h1 className='text-center font-[montserrat] font-normal mb-5 text-[24px] md:mb-5'>We are here to help you...</h1>
               <div className='flex flex-wrap mx-2 md:flex-row gap-5 ml-4 md:ml-10 '>
                 {provider.images.map((image, index) => (
-                  <img key={index} className='w-[115px] h-[110px] rounded-lg' src={image} alt="" />
+                  <img key={index} className='w-[115px] h-[110px] rounded-lg hover:scale-110' src={image} alt="" />
                 ))}
               </div>
             </div>

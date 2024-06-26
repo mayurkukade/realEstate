@@ -11,6 +11,7 @@ import Grocery from '../assets/images/Services/Grocery.jpg';
 import House from '../assets/images/Services/House.jpg';
 import Dth from '../assets/images/Services/Dth.jpg';
 import Gardening from '../assets/images/Services/Gardening.jpg';
+import { Link } from 'react-router-dom';
 
 
 const ServiceCard = ({ imageSrc, altText, description,onClick }) => (
@@ -32,42 +33,66 @@ function Services() {
       </div>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 mx-10 justify-center p-14 md:p-20 font-[Lato]'>
+      <Link to="/acservices">
         <ServiceCard 
-         imageSrc={AC}  altText='AC' description='AC Services' onClick={()=>alert("Clicked")} 
+         imageSrc={AC}  altText='AC' description='AC Services'  
          />
+         </Link>
+         <Link to="/plumbingservices">
         <ServiceCard 
         imageSrc={Plumbing} altText='Plumbing' description='Plumbing Services' 
         />
+        </Link>
+        <Link to="/paintingservices">
         <ServiceCard 
         imageSrc={Painting} altText='Painting' description='Painting Services' 
         />
+        </Link>
+        <Link to="/carpaenterservices">
         <ServiceCard 
         imageSrc={Carpaenter} altText='Carpaenter' description='Carpaenter Services' 
         />
+        </Link>
+         <Link to="/securityservices">
         <ServiceCard 
         imageSrc={Security} altText='Security' description='Security Services' 
         />
+        </Link>
+         <Link to="/pestservices">
         <ServiceCard 
         imageSrc={Pest} altText='Pest' description='Pest Control Services' 
         />
+        </Link>
+         <Link to="/electricalservices">
         <ServiceCard 
         imageSrc={Electrical} altText='Electrical' description='Electrical Services' 
         />
+        </Link>
+         <Link to="/wifiservices">
         <ServiceCard 
         imageSrc={Wifi} altText='Wifi' description='Wifi Services' 
         />
+        </Link>
+         <Link to="/groceryservices">
         <ServiceCard 
         imageSrc={Grocery} altText='Grocery' description='Grocery Services' 
         />
+        </Link>
+         <Link to="/houseservices">
         <ServiceCard 
         imageSrc={House} altText='House' description='HouseKeeping Services' 
         />
+        </Link>
+         <Link to="/dthservices">
         <ServiceCard 
         imageSrc={Dth} altText='Dth' description='Dth Services' 
         />
+        </Link>
+         <Link to="/gardeningservices">
         <ServiceCard 
         imageSrc={Gardening} altText='Gardening' description='Gardening Services' 
         />
+        </Link>
       </div>
     </section>
   );
