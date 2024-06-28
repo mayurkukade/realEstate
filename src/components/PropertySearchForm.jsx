@@ -26,19 +26,19 @@ const PropertySearchForm = () => {
 
   // Predefined options for price range
   const priceRangeOptions = [
-    "0 - 100,000",
-    "100,000 - 200,000",
-    "200,000 - 300,000",
-    "300,000 - 400,000",
+    "0 - 1L",
+    "1L - 2L",
+    "2L - 3L",
+    "3L - 4L",
     // Add more price ranges as needed
   ];
 
   return (
 
-    <form onSubmit={handleSubmit} className="flex justify-center ml-72 ring-1 ring-gray-300 shadow-2xl p-4 bg-gray-50 w-1/2 rounded-xl ">
+    <form onSubmit={handleSubmit} className="flex flex-col lg:flex-row items-center justify-center md:ml-72 ring-1 ring-gray-300 shadow-2xl p-4 bg-gray-50 md:w-1/2 rounded-xl ">
      
       <div className="flex flex-col items-start mr-6">
-        <label htmlFor="propertyType" className="mb-2 ml-1 font-semibold">Property Type</label>
+        <label htmlFor="propertyType" className="md:mb-2 md:ml-1 font-semibold">Property Type</label>
         <select
           id="propertyType"
           value={propertyType}
@@ -54,7 +54,7 @@ const PropertySearchForm = () => {
         </select>
       </div>
       <div className="flex flex-col items-start mr-6">
-        <label htmlFor="location" className="mb-2 ml-1 font-semibold">Location</label>
+        <label htmlFor="location" className="md:mb-2 md:ml-1 font-semibold">Location</label>
         <select
           id="location"
           value={location}
@@ -68,13 +68,13 @@ const PropertySearchForm = () => {
           ))}
         </select>
       </div>
-      <div className="flex flex-col items-start mr-4">
-        <label htmlFor="priceRange" className="mb-2 font-semibold">Price Range</label>
+      <div className="flex flex-col items-start mr-6">
+        <label htmlFor="priceRange" className="md:mb-2  md:ml-1 font-semibold">Price Range</label>
         <select
           id="priceRange"
           value={priceRange}
           onChange={(e) => setPriceRange(e.target.value)}
-          className="border p-2 rounded-lg"
+          className="border p-2 rounded-lg "
           style={{ backgroundColor: "#faf8ed" }}
         >
           <option value="">Please Select</option>

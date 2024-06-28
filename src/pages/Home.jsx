@@ -21,28 +21,28 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       <div className="container mx-auto px-4 ">
-      <header className="flex flex-row md:flex-row items-center justify-end text-center py-12">
-  <div className="md:mr-52 font-kalam">
-    <h1 className="text-8xl text-customBlue">Where Dreams</h1>
-    <p className="text-8xl text-customBlue mt-4">Come Home</p>
-  </div>
-  <div className="flex flex-col items-center  md:items-right mt-20">
-    {/* Top avatar */}
-    <img src="https://s3-alpha-sig.figma.com/img/ff38/e6a7/ebbf24ebe4fe502ad5d7aa6690fc7f61?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Lyu4KEH1-wi6Ownqd~bRpGgu~MGDA1OFFX2gyHZmIxRuSOhuqBWV9NOk7fq5SNNndfnkjapH1IC2-x~DxWmqu4t4sA9oPBdRKSXmgUUfgILLm9qK9T0Kpg6AMea-Q3f1hJPhvWF2pBOxqc8FXQ~nOt-RWdRLoE3puILr~nhRsLOilkLyuuWjn37-c0Irh0HA3hsd1o0IFqvPDsXY-Py9aQ70z2jjwBsjYt-vjpvDdJANxRhndJnBW7bcREC5h-51fnQiphP8rACPC3Hx~bJNFfCgwrvjEiI-AyDFwsbzNsKhZS9rQB1bES98lqEWdF9UusRHQZvCMnrxKXhqNwIWGQ__" alt="Avatar 1" className="w-20 h-20 rounded-full mb-4 ring-8 ring-white shadow-2xl" />
-    {/* Below avatars */}
-    <div className="flex justify-center md:justify-start gap-4">
-      <img src="https://s3-alpha-sig.figma.com/img/e599/9e3e/12c10e38026a27cde9d17a2719f0f173?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hmn14~2XrUVN8ANApcSBUAxObq1t1d9aCBW8fnXcjwZh3u870Gi-D5HRkGu3F5xw4VXVCofhwWNIcazLFbu0Sv~KI2sqNXAyV6N~ees8xRYztHgrVeT1uEjDh1KRXR~le0o8GtG3-HkegFdYprpsw9Xz1jYFtJjLSbV37jixKAQ81sL08TnBZzpHLSsHcBvHTZsFGEoCj2dVllDtpH609QmTsMrVdft8Wvam5srP6N1wVzG4kMIqrEMy6tMObVs6VVi3HzgPKO4w25SBlWGldiCcjQgATouYwA0A3O4xYlYAcUZwxcxfY6fCJFrgQ7DbHxedJFDvgz-pexXGIJ-ecg__" alt="Avatar 2" className="w-20 h-20 rounded-full mr-4 -mt-12 md:mt-0 ring-8 ring-white shadow-2xl" />
-      <img src="https://s3-alpha-sig.figma.com/img/0e57/e960/837f344b030ab9bcd5d1df703d5a6ebd?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BEtyMv~KBm2nQxiGmtaizorlqvrk1GC6qqABvfQXlebk1U-~RX2G08lxVHiw5n2N2V~R6bAqPPf8eQiPX2OycfguSGSG5oO7QS5g0FsQvhvStTa6mOhMvk4YIpu~4ematxtHQCUJbybQGzMw0LBq0zkdPvzVfh1-M6QS8DX0HqvRJ7WfaBFpL57~Py1RnBN1VT42wA89KA4jlRl-t-BLOiLUW3gdrelQ6AjuP5xiNJrTdYoKp76~hSs97NyInHRlLMQmUdSK8ZW04VWqtz11qAscyM3LiFkjyJY36weZe1YIQV-hUoSloa6b~EcUs3dW490ybCrCNKGxVSPtYByAsQ__" alt="Avatar 3" className="w-20 h-20 rounded-full -mt-12 md:mt-0 ring-8 ring-white shadow-2xl" />
-    </div>
-  </div>
-</header>
-       <div className="ml-96"> <Typography  className="place-items-center ml-24 mb-4" variant="h5">Find Your Dream Property</Typography></div>
+      <header className="flex flex-col md:flex-row items-center justify-center md:justify-end text-center py-12">
+      <div className="md:mr-52 font-kalam md:text-right">
+        <h1 className="text-4xl md:text-8xl text-customBlue">Where Dreams</h1>
+        <p className="text-4xl md:text-8xl text-customBlue mt-2 md:mt-4">Come Home</p>
+      </div>
+      <div className="flex flex-col items-center md:items-right mt-8 md:mt-20">
+        {/* Top avatar */}
+        <img src="https://s3-alpha-sig.figma.com/img/ff38/e6a7/ebbf24ebe4fe502ad5d7aa6690fc7f61?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Lyu4KEH1-wi6Ownqd~bRpGgu~MGDA1OFFX2gyHZmIxRuSOhuqBWV9NOk7fq5SNNndfnkjapH1IC2-x~DxWmqu4t4sA9oPBdRKSXmgUUfgILLm9qK9T0Kpg6AMea-Q3f1hJPhvWF2pBOxqc8FXQ~nOt-RWdRLoE3puILr~nhRsLOilkLyuuWjn37-c0Irh0HA3hsd1o0IFqvPDsXY-Py9aQ70z2jjwBsjYt-vjpvDdJANxRhndJnBW7bcREC5h-51fnQiphP8rACPC3Hx~bJNFfCgwrvjEiI-AyDFwsbzNsKhZS9rQB1bES98lqEWdF9UusRHQZvCMnrxKXhqNwIWGQ__" alt="Avatar 1" className="w-16 h-16 md:w-20 md:h-20 rounded-full mb-2 md:mb-4 ring-8 ring-white shadow-2xl" />
+        {/* Below avatars */}
+        <div className="flex justify-center md:justify-start gap-4">
+          <img src="https://s3-alpha-sig.figma.com/img/e599/9e3e/12c10e38026a27cde9d17a2719f0f173?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hmn14~2XrUVN8ANApcSBUAxObq1t1d9aCBW8fnXcjwZh3u870Gi-D5HRkGu3F5xw4VXVCofhwWNIcazLFbu0Sv~KI2sqNXAyV6N~ees8xRYztHgrVeT1uEjDh1KRXR~le0o8GtG3-HkegFdYprpsw9Xz1jYFtJjLSbV37jixKAQ81sL08TnBZzpHLSsHcBvHTZsFGEoCj2dVllDtpH609QmTsMrVdft8Wvam5srP6N1wVzG4kMIqrEMy6tMObVs6VVi3HzgPKO4w25SBlWGldiCcjQgATouYwA0A3O4xYlYAcUZwxcxfY6fCJFrgQ7DbHxedJFDvgz-pexXGIJ-ecg__" alt="Avatar 2" className="w-16 h-16 md:w-20 md:h-20 rounded-full mr-2 md:mr-4 -mt-8 md:mt-0 ring-8 ring-white shadow-2xl" />
+          <img src="https://s3-alpha-sig.figma.com/img/0e57/e960/837f344b030ab9bcd5d1df703d5a6ebd?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BEtyMv~KBm2nQxiGmtaizorlqvrk1GC6qqABvfQXlebk1U-~RX2G08lxVHiw5n2N2V~R6bAqPPf8eQiPX2OycfguSGSG5oO7QS5g0FsQvhvStTa6mOhMvk4YIpu~4ematxtHQCUJbybQGzMw0LBq0zkdPvzVfh1-M6QS8DX0HqvRJ7WfaBFpL57~Py1RnBN1VT42wA89KA4jlRl-t-BLOiLUW3gdrelQ6AjuP5xiNJrTdYoKp76~hSs97NyInHRlLMQmUdSK8ZW04VWqtz11qAscyM3LiFkjyJY36weZe1YIQV-hUoSloa6b~EcUs3dW490ybCrCNKGxVSPtYByAsQ__" alt="Avatar 3" className="w-16 h-16 md:w-20 md:h-20 rounded-full -mt-8 md:mt-0 ring-8 ring-white shadow-2xl" />
+        </div>
+      </div>
+    </header>
+       <div className="mx-auto lg:ml-96 lg:mb-8"> <Typography  className="place-items-center ml-20 mb-4" variant="h5">Find Your Dream Property</Typography></div>
         <PropertySearchForm/>
       </div>
 
       
       <div className="bg-cover bg-center" style={{ backgroundImage: `url(${imghome})` }}>
-        <div className="container mx-auto px-4 py-96">
+        <div className="container mx-auto px-4 py-44 md:py-96">
           {/* Content within the background image section */}
           {/* <Typography variant="h2" color="white" className="mb-4">Welcome to Our Website!</Typography> */}
           {/* Add more content as needed */}
@@ -52,7 +52,7 @@ const HomePage = () => {
 
 
 
-      <div className="bg-green-200 flex flex-row gap-20 justify-center items-center py-6">
+      <div className="bg-green-200 flex flex-row md:gap-20 gap-4 justify-center items-center py-6">
     <div className="flex flex-col items-center justify-center">
         <Typography variant="h2" color="blue-gray" className="mb-2">300+</Typography>
         <Typography variant="h6" color="blue-gray">Happy Clients</Typography>
@@ -73,7 +73,7 @@ const HomePage = () => {
         <Typography variant="h6" color="blue-gray">Years Growth</Typography>
     </div>
 </div>
-      <div className="flex justify-center space-evenly mb-8 gap-x-8 mt-8">
+      <div className="flex md:flex-row flex-col justify-center items-center space-evenly mb-8 gap-2 md:gap-x-8 mt-8">
           {/* Card 1 */}
           <div className="relative w-64 h-40 bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105">
             <img src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card 1" className="w-full h-full object-cover rounded-t-lg" />
@@ -121,7 +121,7 @@ const HomePage = () => {
           <Typography variant="h4" color="blue-gray" className="mb-4">Categories</Typography>
         </div>
 
-        <div className="flex gap-12 justify-center ">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-12 justify-center ">
           {/* Category 1 */}
           <div className="flex flex-col items-center hover:shadow-xl hover:rounded-lg hover:bg-gray-200 hover:scale-105">
             {/* Icon or Image (replace placeholder with your actual image) */}
@@ -173,11 +173,11 @@ const HomePage = () => {
       <div className="flex flex-col items-center mb-8">
         <Typography variant="h3" color="blue-gray" className="mb-4">Contact with Happy Customers</Typography>
       </div>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
       {/* Contact Cards Section */}
       <div className="container mx-auto px-4 mt-4"> {/* Adjust top margin */}
-        <div className="flex justify-center gap-8">
+        <div className="flex flex-col gap-10 md:flex-row justify-center md:gap-8">
           
 
     <div className='flex flex-col items-center cursor-pointer transform transition-all relative'>

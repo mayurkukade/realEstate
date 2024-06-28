@@ -12,7 +12,7 @@ const openUrlInNewTab = (link) => {
     // Your openUrlInNewTab function logic here
 };
   return (
-    <footer className="relative w-full">
+    <footer className="relative w-full h-full md:w-full">
       <div>
         <div className="bg-gray-100">
         <div className="flex bg-slate-500">
@@ -27,31 +27,31 @@ const openUrlInNewTab = (link) => {
                 </div>
                 <div className="mb-footer__main__title text-xl font-semibold text-gray-800 mb-4">More from our Network</div>
                 <ul className="mb-footer__partnerslist flex flex-wrap ">
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">MensXp</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">iDiva</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">Gadget Now</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">Economic Times</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">Filmfare</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">Times of India</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800" rel="nofollow noreferrer noopener">USA Today</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">New York Post</span>
                     </li>
-                    <li className="mb-footer__partnerslist__val w-1/5 pr-4">
+                    <li className="mb-footer__partnerslist__val  w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 pr-4">
                         <span data-link="" className="mb-footer__partnerslist__val__link text-gray-800"  rel="nofollow noreferrer noopener">Chicago Tribune</span>
                     </li>
 
@@ -94,8 +94,8 @@ const openUrlInNewTab = (link) => {
         
         
         
-        <div className="bg-indigo-700 w-full h-20 flex items-center justify-between">
-          <div className="flex gap-8 justify-start ml-16">
+        <div className="bg-indigo-700 w-full h-auto md:h-20 sm:h-20  flex flex-col md:flex-row  items-center justify-between">
+          <div className="flex gap-6 md:gap-8 justify-start md:ml-16">
             <Typography as="a" href="#" className=" transition-opacity hover:opacity-100">
             <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
             </Typography> 
@@ -115,7 +115,7 @@ const openUrlInNewTab = (link) => {
             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
             </Typography>
           </div>
-          <div className="flex gap-8 justify-end mr-16">
+          <div className="flex gap-6 md:gap-8 justify-end md:mr-16">
             <Typography variant="h6" color="white">Advertise with us</Typography>
             <Typography variant="h6" color="white">Contact us</Typography>
             <Typography variant="h6" color="white">Privacy Policy</Typography>
@@ -125,7 +125,7 @@ const openUrlInNewTab = (link) => {
         </div>
         
         
-        <div className="w-full h-10 bg-gray-700 text-white text-sm text-left p-2">All trademarks, logos and names are properties of their respective owners. All Rights Reserved. &copy; Copyright 2024 Real Estate Realty Services Limited.
+        <div className="w-full h-10 bg-gray-700 text-white text-sm text-left p-2 sm:h-12 md:h-10">All trademarks, logos and names are properties of their respective owners. All Rights Reserved. &copy; Copyright 2024 Real Estate Realty Services Limited.
         </div>
       </div>
     </footer>

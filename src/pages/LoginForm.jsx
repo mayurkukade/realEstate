@@ -112,3 +112,5 @@ export function LoginForm() {
     </Card>
   );
 }
+
+export default LoginForm;
